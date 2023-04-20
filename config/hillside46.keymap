@@ -10,8 +10,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define QWERTY_L 0
-#define DVORAK_L 1
+#define Hd-vb_L 0
+#define QWERTY_L 1
 #define COLEMK_L 2
 #define NAV_L    3
 #define SYM_L    4
@@ -29,6 +29,24 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
+/* HD-Vibranium
+ * -------------------------------------------------------------------------------------------------------------------------------------
+ * | `     |   '   |   ,   |   .   |   P   |   Y   |-----------------------------------|   F   |   G   |   C   |   R   |   L   | BKSPC |
+ * | TAB   |   A   |   O   |   E   |   U   |   I   |-----------------------------------|   D   |   H   |   T   |   N   |   S   | ENTER |
+ * | CTRL  |   ;   |   Q   |   J   |   K   |   X   |  ESC  |-------------------| CAPS  |   B   |   M   |   W   |   V   |   Z   |   /   |
+ *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
+ */
+                        bindings = <
+&kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  F        &kp  G        &kp  C        &kp  R        &kp  L        &kp  BSPC
+&kp  TAB      &kp  C        &kp  S        &kp  N        &kp  T        &kp  K                                                                         &kp  D        &kp  A        &kp  E        &kp  I        &kp  H        &kp  ENTER
+&kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &caps_word    &kp  B        &kp  U        &kp  O        &kp  Y        &kp  B        &kp  SLASH
+                                                        &kp  LGUI     &kp  LALT     &kp  R         &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &sk  LSHIFT   &kp  RGUI
+                        >;
+			
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                };
+		
+                querty_layer {
 /* QWERTY
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | `     |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Y   |   U   |   I   |   O   |   P   | BKSPC |
@@ -41,24 +59,6 @@
 &kp  TAB      &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                                                         &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  ENTER  
 &kp  LCTRL    &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  ESC                                           &caps_word    &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  SQT
                                                         &kp  LGUI     &kp  LALT     &sk  LSHIFT    &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &kp  LALT     &kp  RGUI
-                        >;
-			
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-                };
-		
-                dvorak_layer {
-/* DVORAK
- * -------------------------------------------------------------------------------------------------------------------------------------
- * | `     |   '   |   ,   |   .   |   P   |   Y   |-----------------------------------|   F   |   G   |   C   |   R   |   L   | BKSPC |
- * | TAB   |   A   |   O   |   E   |   U   |   I   |-----------------------------------|   D   |   H   |   T   |   N   |   S   | ENTER |
- * | CTRL  |   ;   |   Q   |   J   |   K   |   X   |  ESC  |-------------------| CAPS  |   B   |   M   |   W   |   V   |   Z   |   /   |
- *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
- */
-                        bindings = <
-&kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  F        &kp  G        &kp  C        &kp  R        &kp  L        &kp  BSPC
-&kp  TAB      &kp  C        &kp  S        &kp  N        &kp  T        &kp  K                                                                         &kp  D        &kp  A        &kp  E        &kp  I        &kp  H        &kp  ENTER
-&kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &caps_word    &kp  B        &kp  U        &kp  O        &kp  Y        &kp  B        &kp  SLASH
-                                                        &kp  LGUI     &kp  LALT     &kp  R         &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &sk  LSHIFT   &kp  RGUI
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -127,7 +127,7 @@
  *                                 |       |       |       |       |---|       |       |       |       |
  */
                         bindings = <
-&none         &to  QWERTY_L &to  DVORAK_L &to  COLEMK_L &none         &none                                                                             &none             &kp   F11          &kp   F12  &kp PRINTSCREEN   &ext_power EP_OFF  &ext_power EP_ON
+&none         &to  QWERTY_L &to  Hd-vb_L &to  COLEMK_L &none         &none                                                                             &none             &kp   F11          &kp   F12  &kp PRINTSCREEN   &ext_power EP_OFF  &ext_power EP_ON
 &kp  D        &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &bt  BT_SEL 4                                                                     &none             &none              &none            &none          &none           &kp  D
 &none         &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp LSHIFT    &none         &bt BT_CLR                                         &none            &none             &none              &out  OUT_USB    &out  OUT_BLE  &none           &bootloader
                                                         &trans        &trans        &trans        &trans                 &trans        &trans           &trans            &trans 
