@@ -88,13 +88,6 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 // MOD MORPH
 
-        l_t_1: left_thumb_1 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LEFT_THUMB";
-            #binding-cells = <0>;
-            bindings = <&lay_re 1>, <&lay_re 4>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
         
         dot_amps: dot_amps {
             compatible = "zmk,behavior-mod-morph";
@@ -136,9 +129,11 @@
             quick-release;
         };
 
-    };
 
+
+    };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
 
 
     combos {
@@ -170,11 +165,10 @@
  */
                         bindings = <
 &kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  F        &kp  G        &kp  C        &kp  R        &kp  L        &kp  BSPC
-&kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N   &hm LCTRL T  &kp  K                                                                         &kp  D        &hm LCTRL A  &hm LALT  E  &hm LGUI  I  &kp  H        &kp  ENTER
+&kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &kp  D        &hm LCTRL A  &hm LALT  E  &hm LGUI  I  &kp  H        &kp  ENTER
 &kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &caps_word    &kp  B        &kp  U        &kp  O        &kp  Y        &kp  B        &kp  SLASH
-                                                        &kp  LGUI     &kp  BSPC     &kp  R         &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &sk  LSHIFT   &kp  RGUI
+                                                        &del1         &bsp1         &kp  R         &mo  NAV_L            &mo  SYM_L  &hm LSHIFT  SPACE  &spc_sh   &kp  RGUI
                         >;
-
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
