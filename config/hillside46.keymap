@@ -27,6 +27,39 @@
 / {
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+    behaviors {
+
+        h_h: hold_tap_hold_prefered {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_HP";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        h_b: ht_bl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_BL";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+        h_t: ht_tp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_TP";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
+
+    };
+
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -57,9 +90,9 @@
  */
                         bindings = <
 &kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  F        &kp  G        &kp  C        &kp  R        &kp  L        &kp  BSPC
-&kp  TAB      &kp  C        &kp  S        &kp  N        &kp  T        &kp  K                                                                         &kp  D        &kp  A        &kp  E        &kp  I        &kp  H        &kp  ENTER
+&kp  TAB      &h_b NAV_L C  &h_b LGUI S   &h_b LALT N   &h_b LCTRL T  &kp  K                                                                         &kp  D        &h_b LCTRL A  &h_b LALT  E  &h_b LGUI  I  &kp  H        &kp  ENTER
 &kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &caps_word    &kp  B        &kp  U        &kp  O        &kp  Y        &kp  B        &kp  SLASH
-                                                        &kp  LGUI     &kp  LALT     &kp  R         &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &sk  LSHIFT   &kp  RGUI
+                                                        &kp  LGUI     &kp  BSPC     &kp  R         &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &sk  LSHIFT   &kp  RGUI
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
