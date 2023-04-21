@@ -56,7 +56,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
 
     };
 
@@ -90,7 +98,7 @@
  */
                         bindings = <
 &kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  F        &kp  G        &kp  C        &kp  R        &kp  L        &kp  BSPC
-&kp  TAB      &h_b NAV_L C  &h_b LGUI S   &h_b LALT N   &h_b LCTRL T  &kp  K                                                                         &kp  D        &h_b LCTRL A  &h_b LALT  E  &h_b LGUI  I  &kp  H        &kp  ENTER
+&kp  TAB      &lt NAV_L C  &hm LGUI S   &hm LALT N   &hm LCTRL T  &kp  K                                                                         &kp  D        &hm LCTRL A  &hm LALT  E  &hm LGUI  I  &kp  H        &kp  ENTER
 &kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &caps_word    &kp  B        &kp  U        &kp  O        &kp  Y        &kp  B        &kp  SLASH
                                                         &kp  LGUI     &kp  BSPC     &kp  R         &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &sk  LSHIFT   &kp  RGUI
                         >;
