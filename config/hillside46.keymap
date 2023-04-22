@@ -155,6 +155,15 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
+        spsh_l: space_shift_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "space_shift_layer";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&spc_sh>;
+        };
 
         lk_qu: lk_qu {
             compatible = "zmk,behavior-hold-tap";
@@ -282,7 +291,6 @@
             timeout-ms = <50>;
             key-positions = <7 8>;
             bindings = <&tog NUM_L>;
-            layers = <0>;
         };
 
     };
@@ -304,10 +312,10 @@
  *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
  */
                         bindings = <
-&kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH     &kp  DOT      &hm LBKT RBKT &kp  SLASH    &sqt_at       &kp  BSPC
-&kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &comma_par    &hm LCTRL A   &hm LALT  E   &hm LGUI  I   &kp  H        &kp  ENTER
-&kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &caps_word    &kp  MINUS    &kp  U        &kp  O        &kp  Y        &kp  B        &kp  SLASH
-                                                        &del1         &bsp2         &hm_l NUM_L R    &mo  NAV_L            &mo  SYM_L  &hm LSHIFT  SPACE  &spc_sh   &kp  RGUI
+&kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH     &kp  DOT      &hm LBKT RBKT &kp  SLASH    &sqt_at          &none
+&kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &comma_par    &hm LCTRL A   &hm LALT  E   &hm LGUI  I   &hm_l NUM_L H    &kp  ENTER
+&kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &caps_word    &kp  MINUS    &kp  U        &kp  O        &kp  Y        &kp  B           &none
+                                                        &del1         &bsp2         &hm_l SYM_L R    &none            &none       &hm LSHIFT  SPACE  &spsh_l SYM_L A  &none
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -340,10 +348,10 @@
  *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
  */
                         bindings = <
-&kp  GRAVE    &kp  Q        &kp  7        &kp  8        &kp  9        &kp  T                                                                         &kp  HASH     &kp  DOT      &kp  EQUAL    &kp  SLASH    &SQT_cl SQT SQT &kp  BSPC
-&kp  TAB      &hm_l NAV_L 0 &hm LGUI 1    &hm LALT 2    &hm LCTRL 3   &kp  K                                                                         &kp  COMMA    &hm LCTRL LPAR   &hm LALT  E   &hm LGUI  I   &kp  H        &kp  ENTER
-&kp  LCTRL    &kp  Z        &kp  4        &kp  5        &kp  6        &kp  B        &kp  ESC                                           &caps_word    &kp  MINUS    &kp  LPAR        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  SQT
-                                                        &trans        &trans        &kp  RETURN    &kp  TAB             &mo  SYM_L  &hm LSHIFT SPACE &kp TAB      &kp  RGUI
+&kp  GRAVE    &kp  Q        &kp  7        &kp  8        &kp  9        &kp  PERCENT                                                                   &trans        &trans           &trans        &trans        &trans        &trans        
+&kp  TAB      &hm_l NAV_L 0 &hm LGUI 1    &hm LALT 2    &hm LCTRL 3   &kp  DOLLAR                                                                    &trans        &hm LCTRL EXCL   &hm LALT  E   &hm LGUI  I   &kp  H        &trans        
+&kp  LCTRL    &kp  Z        &kp  4        &kp  5        &kp  6        &kp  EURO     &kp  ESC                                           &caps_word    &trans        &kp  QMARK        &kp  COMMA    &kp  DOT      &kp  SLASH    &trans        
+                                                        &trans        &trans        &hm_l SYM_L RETURN    &kp  TAB             &mo  SYM_L  &hm LSHIFT SPACE &kp TAB      &kp  RGUI
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
