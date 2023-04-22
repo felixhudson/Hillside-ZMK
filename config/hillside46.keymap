@@ -63,6 +63,13 @@
                 , <&macro_tap &kp U>
                 ;
         };
+        SQT_close: SQT_close {
+            label = "SQT_closer";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LC(X) &kp SQT &kp SQT &kp LEFT &kp LC(V)>
+                ;
+        };
     };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
@@ -123,6 +130,14 @@
             bindings = <&kp>, <&kp_qu>;
         };
 
+        SQT_cl: SQT_cl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SQT_clr";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp SQT>, <&SQT_close >;
+        };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         // MOD MORPH
@@ -210,7 +225,7 @@
  *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
  */
                         bindings = <
-&kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH     &kp  DOT     &kp  EQUAL   &kp  SLASH   &kp  SQT      &kp  BSPC
+&kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH     &kp  DOT     &kp  EQUAL   &kp  SLASH   &kp  SQT_cl   &kp  BSPC
 &kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &kp  COMMA    &hm LCTRL A  &hm LALT  E  &hm LGUI  I  &kp  H        &kp  ENTER
 &kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &caps_word    &kp  MINUS    &kp  U        &kp  O        &kp  Y        &kp  B        &kp  SLASH
                                                         &del1         &bsp1         &kp  R         &mo  NAV_L            &mo  SYM_L  &hm LSHIFT  SPACE  &spc_sh   &kp  RGUI
