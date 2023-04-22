@@ -78,6 +78,24 @@
             bindings = <&macro_tap &kp LC(X) &kp SQT &kp SQT &kp LEFT &kp LC(V)>
                 ;
         };
+        PAR_close: PAR_close {
+            label = "PAR_closer";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_tap &kp LC(X) &kp LPAR &kp RPAR &kp LEFT &kp LC(V)>
+                ;
+        };
+        DQT_close: DQT_close {
+            label = "DQT_closer";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_tap &kp LC(X) &kp DQT &kp DQT &kp LEFT &kp LC(V)>
+                ;
+        };
         schnell_sch: schnell {
             label = "Schau_mal";
             compatible = "zmk,behavior-macro";
@@ -155,6 +173,22 @@
             flavor = "tap-preferred";
             bindings = <&SQT_close>, <&kp>;
         };
+        PAR_cl: PAR_cl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PAR_clr";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&PAR_close>, <&kp>;
+        };
+        DQT_cl: DQT_cl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "DQT_clr";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&DQT_close>, <&kp>;
+        };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         // MOD MORPH
@@ -168,11 +202,18 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        comma_pipe: comma_pipe {
+        comma_par: comma_par {
             compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_PIPE";
+            label = "COMMA_par";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp PIPE>;
+            bindings = <&kp COMMA>, <&PAR_cl LPAR LPAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sqt_at: SQTDQT {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SQTDQT";
+            #binding-cells = <0>;
+            bindings = <&SQT_cl SQT SQT>, <&kp AT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         
@@ -263,8 +304,8 @@
  *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
  */
                         bindings = <
-&kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH     &kp  DOT      &kp  EQUAL    &kp  SLASH    &SQT_cl SQT SQT  &kp  BSPC
-&kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &kp  COMMA    &hm LCTRL A   &hm LALT  E   &hm LGUI  I   &kp  H        &kp  ENTER
+&kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH     &kp  DOT      &hm LBKT RBKT &kp  SLASH    &sqt_at       &kp  BSPC
+&kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &comma_par    &hm LCTRL A   &hm LALT  E   &hm LGUI  I   &kp  H        &kp  ENTER
 &kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &caps_word    &kp  MINUS    &kp  U        &kp  O        &kp  Y        &kp  B        &kp  SLASH
                                                         &del1         &bsp2         &hm_l NUM_L R    &mo  NAV_L            &mo  SYM_L  &hm LSHIFT  SPACE  &spc_sh   &kp  RGUI
                         >;
