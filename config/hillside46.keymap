@@ -124,36 +124,62 @@
 
     };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&kp Z>;
-        };
-    };
-
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 // MACRO
 
     macros {
         
-	spc_sh: space_shift_macro {
+	    spc_sh: space_shift_macro {
 	        compatible = "zmk,behavior-macro";
         	label = "MACRO1";
 	        #binding-cells = <0>;
         	bindings = <&macro_tap &kp SPACE &sk RSHIFT>;
-	};
+	    };
         
         upupup: upupup {
             label = "UPUPUP";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp UP &kp UP &kp UP>
+                = <&macro_tap &kp UP &kp UP &kp UP &kp UP &kp UP>
                 ;
+        };
+        downdown: downdown {
+            label = "DOWNDOWN";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>
+                ;
+        };
+        kp_qu: kpqu {
+            label = "Key_QU";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp Q>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp U>
+                ;
+        };
+    };
+
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+
+    combos {
+        
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kp Z>;
+        };
+        
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <2 4>;
+            bindings = <&kp_qu>;
         };
     };
 
@@ -228,7 +254,7 @@
  *                                 |       |       |       |       |---| ADJ_L |       |       |       |
  */
                         bindings = <
-&kp  Copy     &kp  N4       &kp  Cut      &kp  Copy     &kp  Paste    &kp  Redo                                                                      &kp   N6      &kp   N7     &kp   N8       &upupup       &kp  N0       &trans
+&kp  Copy     &kp  N4       &kp  Cut      &kp  Copy     &kp  Paste    &kp  Redo                                                                      &kp   N6      &kp   N7     &downdown      &upupup       &kp  N0       &trans
 &kp  Cut      &kp  LSHFT    &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp Undo                                                                       &kp   PG_UP   &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &kp PG_DN
 &trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &kp Undo                                           &kp  Redo     &kp   F6      &kp  F7      &kp PG_DN      &kp   PG_UP   &kp  F10      &kp RCTRL
                                                         &trans        &trans        &trans        &trans                 &mo ADJ_L     &trans        &trans        &trans 
