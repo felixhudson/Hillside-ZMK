@@ -136,7 +136,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            bindings = <&kp SQT>, <&kp U>;
+            bindings = <&kp SQT>, <&SQT_close >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -225,7 +225,7 @@
  *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
  */
                         bindings = <
-&kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH     &kp  DOT     &kp  EQUAL   &kp  SLASH   &kp  SQT_cl   &kp  BSPC
+&kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH     &kp  DOT     &kp  EQUAL   &kp  SLASH   &SQT_cl   &kp  BSPC
 &kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &kp  COMMA    &hm LCTRL A  &hm LALT  E  &hm LGUI  I  &kp  H        &kp  ENTER
 &kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &caps_word    &kp  MINUS    &kp  U        &kp  O        &kp  Y        &kp  B        &kp  SLASH
                                                         &del1         &bsp1         &kp  R         &mo  NAV_L            &mo  SYM_L  &hm LSHIFT  SPACE  &spc_sh   &kp  RGUI
