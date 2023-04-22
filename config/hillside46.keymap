@@ -170,7 +170,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BSP2";
             #binding-cells = <0>;
-            bindings = <bsp1>, <&kp TAB>;
+            bindings = <&kp BSPC>, <&kp TAB>;
             mods = <(MOD_LALT|MOD_RALT)>;
             keep-mods = <(MOD_LALT|MOD_RALT)>;
         };
