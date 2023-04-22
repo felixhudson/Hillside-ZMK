@@ -189,7 +189,7 @@
         combo_qu {
             timeout-ms = <50>;
             key-positions = <2 4>;
-            bindings = <&lk_qu Q>;
+            bindings = <&lk_qu Q U>;
             layers = <0>;
         };
 
