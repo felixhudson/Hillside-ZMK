@@ -74,7 +74,7 @@
             label = "Schau_mal";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp LC(X) &kp S &kp C &kp H &kp A &kp U &kp &kp SPACE>
+            bindings = <&macro_tap &kp LC(X) &kp SQT &kp SQT &kp LEFT &kp LC(V)>
                 ;
         };
     };
