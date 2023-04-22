@@ -96,6 +96,17 @@
             bindings = <&macro_tap &kp LC(X) &kp DQT &kp DQT &kp LEFT &kp LC(V)>
                 ;
         };
+        EURO: euro {
+            label = "EURO";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&macro_press &kp LALT>
+                , <&macro_tap &kp 0 &kp 1 &kp 2 &kp 8>
+                , <&macro_release &kp LALT>
+                ;
+        };
         schnell_sch: schnell {
             label = "Schau_mal";
             compatible = "zmk,behavior-macro";
@@ -350,7 +361,7 @@
                         bindings = <
 &kp  GRAVE    &kp  Q        &kp  7        &kp  8        &kp  9        &kp  PERCENT                                                                   &trans        &trans           &trans        &trans        &trans        &trans        
 &kp  TAB      &hm_l NAV_L 0 &hm LGUI 1    &hm LALT 2    &hm LCTRL 3   &kp  DOLLAR                                                                    &trans        &hm LCTRL EXCL   &hm LALT  E   &hm LGUI  I   &kp  H        &trans        
-&kp  LCTRL    &kp  Z        &kp  4        &kp  5        &kp  6        &kp  EURO     &kp  ESC                                           &caps_word    &trans        &kp  QMARK        &kp  COMMA    &kp  DOT      &kp  SLASH    &trans        
+&kp  LCTRL    &kp  Z        &kp  4        &kp  5        &kp  6        &EURO         &kp  ESC                                           &caps_word    &trans        &kp  QMARK        &kp  COMMA    &kp  DOT      &kp  SLASH    &trans        
                                                         &trans        &trans        &hm_l SYM_L RETURN    &kp  TAB             &mo  SYM_L  &hm LSHIFT SPACE &kp TAB      &kp  RGUI
                         >;
 			
