@@ -70,6 +70,13 @@
             bindings = <&macro_tap &kp LC(X) &kp SQT &kp SQT &kp LEFT &kp LC(V)>
                 ;
         };
+        schnell_sch: schnell {
+            label = "Schau_mal";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LC(X) &kp S &kp C &kp H &kp A &kp U &kp &kp SPACE &kp M &kp A &kp L &kp &kp SPACE &kp W &kp I &kp E &kp &kp SPACE &kp S &kp C &kp H &kp N &kp E &kp L &kp L &kp &kp SPACE &kp I &kp C &kp H &kp &kp SPACE &kp S &kp C &kp H &kp R &kp E &kp I &kp B &kp E &kp N &kp &kp SPACE &kp K &kp A &kp N &kp N>
+                ;
+        };
     };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
@@ -209,7 +216,7 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <15 16 17>;
+            key-positions = <14 15 16>;
             bindings = <&kp ESC>;
         };
 
@@ -222,7 +229,7 @@
 
         combo_numL {
             timeout-ms = <50>;
-            key-positions = <8 9>;
+            key-positions = <7 8>;
             bindings = <&tog NUM_L>;
             layers = <0>;
         };
@@ -274,7 +281,7 @@
                 };
 		
                 num_layer {
-/* COLEMAK-DH
+/* NUM-Layer
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | `     |   Q   |   W   |   F   |   P   |   B   |-----------------------------------|   J   |   L   |   U   |   Y   |   ;   | BKSPC |
  * | TAB   |   A   |   R   |   S   |   T   |   G   |-----------------------------------|   M   |   N   |   E   |   I   |   O   | ENTER |
@@ -337,7 +344,7 @@
  */
                         bindings = <
 &none         &to  HDVB_L &to  QWERTY_L &to  NUM_L &none         &none                                                                             &none             &kp   F11          &kp   F12  &kp PRINTSCREEN   &ext_power EP_OFF  &ext_power EP_ON
-&kp  D        &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &bt  BT_SEL 4                                                                     &none             &none              &none            &none          &none           &kp  D
+&kp  D        &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &bt  BT_SEL 4                                                                     &none             &schnell_sch       &none            &none          &none           &kp  D
 &none         &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp LSHIFT    &none         &bt BT_CLR                                         &none            &none             &none              &out  OUT_USB    &out  OUT_BLE  &none           &bootloader
                                                         &trans        &trans        &trans        &trans                 &trans        &trans           &trans            &trans 
                         >;
