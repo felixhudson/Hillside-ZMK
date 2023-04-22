@@ -114,6 +114,14 @@
             bindings = <&mo>, <&kp>;
         };
 
+        lk_qu: lk_qu {
+            compatible = "zmk,behavior-hold-tap";
+            label = "lk_qu";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp_qu>;
+        };
 
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -181,7 +189,7 @@
         combo_qu {
             timeout-ms = <50>;
             key-positions = <2 4>;
-            bindings = <&kp_qu>;
+            bindings = <&lk_qu Q>;
             layers = <0>;
         };
 
