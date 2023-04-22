@@ -113,15 +113,7 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
-        qu_key: qu_key {
-            compatible = "zmk,behavior-hold-tap";
-            label = "QU_Keey";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp_qu>, <&kp Q>;
-        };
+
 
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -189,7 +181,7 @@
         combo_qu {
             timeout-ms = <50>;
             key-positions = <2 4>;
-            bindings = <&qu_key>;
+            bindings = <&kp_qu>;
             layers = <0>;
         };
 
