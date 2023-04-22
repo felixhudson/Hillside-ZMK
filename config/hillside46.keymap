@@ -41,6 +41,8 @@
             label = "UPUPUP";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp UP &kp UP &kp UP &kp UP &kp UP>
                 ;
@@ -49,6 +51,8 @@
             label = "DOWNDOWN";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings
                 = <&macro_tap &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>
                 ;
@@ -57,6 +61,8 @@
             label = "Key_QU";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings = <&macro_tap &kp Q>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
@@ -67,6 +73,8 @@
             label = "SQT_closer";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings = <&macro_tap &kp LC(X) &kp SQT &kp SQT &kp LEFT &kp LC(V)>
                 ;
         };
@@ -74,18 +82,9 @@
             label = "Schau_mal";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
             bindings = <&macro_tap &kp LC(X) &kp SQT &kp SQT &kp LEFT &kp LC(V)>
-                ;
-        };
-        test: ttest {
-            label = "TEST";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <2>;
-            bindings
-                = <&macro_tap &kp DOWN> 
-                , <&macro_tap &kp>
-                , <&macro_tap &kp> 
-                , <&macro_tap &kp DOWN &kp DOWN &kp DOWN>
                 ;
         };
     };
@@ -355,7 +354,7 @@
  */
                         bindings = <
 &none         &to  HDVB_L &to  QWERTY_L &to  NUM_L &none         &none                                                                             &none             &kp   F11          &kp   F12  &kp PRINTSCREEN   &ext_power EP_OFF  &ext_power EP_ON
-&kp  D        &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &bt  BT_SEL 4                                                                     &none             &schnell_sch       &test E M        &none          &none           &kp  D
+&kp  D        &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &bt  BT_SEL 4                                                                     &none             &schnell_sch       &none            &none          &none           &kp  D
 &none         &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp LSHIFT    &none         &bt BT_CLR                                         &none            &none             &none              &out  OUT_USB    &out  OUT_BLE  &none           &bootloader
                                                         &trans        &trans        &trans        &trans                 &trans        &trans           &trans            &trans 
                         >;
