@@ -166,6 +166,15 @@
             bindings = <&kp BSPC>, <&kp LC(BSPC)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        bsp2: bsp2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSP2";
+            #binding-cells = <0>;
+            bindings = <bsp1>, <&kp TAB>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+            keep-mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
         del1: del1 {
             compatible = "zmk,behavior-mod-morph";
             label = "DEL1";
@@ -228,7 +237,7 @@
 &kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH     &kp  DOT     &kp  EQUAL   &kp  SLASH   &SQT_cl SQT SQT  &kp  BSPC
 &kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &kp  COMMA    &hm LCTRL A  &hm LALT  E  &hm LGUI  I  &kp  H        &kp  ENTER
 &kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &caps_word    &kp  MINUS    &kp  U        &kp  O        &kp  Y        &kp  B        &kp  SLASH
-                                                        &del1         &bsp1         &kp  R         &mo  NAV_L            &mo  SYM_L  &hm LSHIFT  SPACE  &spc_sh   &kp  RGUI
+                                                        &del1         &bsp2         &kp  R         &mo  NAV_L            &mo  SYM_L  &hm LSHIFT  SPACE  &spc_sh   &kp  RGUI
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
