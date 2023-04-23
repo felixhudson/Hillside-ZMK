@@ -272,7 +272,7 @@
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp TAB>;
             mods = <(MOD_LALT|MOD_RALT)>;
-          L  keep-mods = <(MOD_LALT|MOD_RALT)>;
+            keep-mods = <(MOD_LALT|MOD_RALT)>;
         };
 
         del1: del1 {
