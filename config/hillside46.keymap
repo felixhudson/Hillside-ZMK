@@ -25,9 +25,8 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 / {
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-// MACRO
 
+ // MACRO ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
     macros {
         
 	    spc_sh: space_shift_macro {
@@ -78,71 +77,73 @@
                  = <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>
                  ;
          };
-        //  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        kp_qu: kpqu {
-            label = "Key_QU";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&macro_tap &kp Q>
-                , <&macro_release &kp LSHFT>
-                , <&macro_release &kp RSHFT>
-                , <&macro_tap &kp U>
-                ;
-        };
-        SQT_close: SQT_close {
-            label = "SQT_closer";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&macro_tap &kp LC(X) &kp SQT &kp SQT &kp LEFT &kp LC(V)>
-                ;
-        };
-        PAR_close: PAR_close {
-            label = "PAR_closer";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&macro_tap &kp LC(X) &kp LPAR &kp RPAR &kp LEFT &kp LC(V)>
-                ;
-        };
-        DQT_close: DQT_close {
-            label = "DQT_closer";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&macro_tap &kp LC(X) &kp DQT &kp DQT &kp LEFT &kp LC(V)>
-                ;
-        };
-        EURO: euro {
-            label = "EURO";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&macro_press &kp LALT>
-                , <&macro_tap &kp 0 &kp 1 &kp 2 &kp 8>
-                , <&macro_release &kp LALT>
-                ;
-        };
-        schnell_sch: schnell {
-            label = "Schau_mal";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&macro_tap &kp LC(X) &kp SQT &kp SQT &kp LEFT &kp LC(V)>
-                ;
-        };
+        // Enclose ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+         kp_qu: kpqu {
+             label = "Key_QU";
+             compatible = "zmk,behavior-macro";
+             #binding-cells = <0>;
+             wait-ms = <0>;
+             tap-ms = <0>;
+             bindings = <&macro_tap &kp Q>
+                 , <&macro_release &kp LSHFT>
+                 , <&macro_release &kp RSHFT>
+                 , <&macro_tap &kp U>
+                 ;
+         };
+         SQT_close: SQT_close {
+             label = "SQT_closer";
+             compatible = "zmk,behavior-macro";
+             #binding-cells = <0>;
+             wait-ms = <0>;
+             tap-ms = <0>;
+             bindings = <&macro_tap &kp LC(X) &kp SQT &kp SQT &kp LEFT &kp LC(V)>
+                 ;
+         };
+         PAR_close: PAR_close {
+             label = "PAR_closer";
+             compatible = "zmk,behavior-macro";
+             #binding-cells = <0>;
+             wait-ms = <0>;
+             tap-ms = <0>;
+             bindings = <&macro_tap &kp LC(X) &kp LPAR &kp RPAR &kp LEFT &kp LC(V)>
+                 ;
+         };
+         DQT_close: DQT_close {
+             label = "DQT_closer";
+             compatible = "zmk,behavior-macro";
+             #binding-cells = <0>;
+             wait-ms = <0>;
+             tap-ms = <0>;
+             bindings = <&macro_tap &kp LC(X) &kp DQT &kp DQT &kp LEFT &kp LC(V)>
+                 ;
+         };
+        // Signs ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+         EURO: euro {
+             label = "EURO";
+             compatible = "zmk,behavior-macro";
+             #binding-cells = <0>;
+             wait-ms = <0>;
+             tap-ms = <0>;
+             bindings = <&macro_press &kp LALT>
+                 , <&macro_tap &kp 0 &kp 1 &kp 2 &kp 8>
+                 , <&macro_release &kp LALT>
+                 ;
+         };
+        // Other ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+         schnell_sch: schnell {
+             label = "Schau_mal";
+             compatible = "zmk,behavior-macro";
+             #binding-cells = <0>;
+             wait-ms = <0>;
+             tap-ms = <0>;
+             bindings = <&macro_tap &kp LC(X) &kp SQT &kp SQT &kp LEFT &kp LC(V)>
+                 ;
+         };
     };
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
     behaviors {
 
+     // Home row mods ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         h_h: hold_tap_hold_prefered {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_HP";
@@ -188,6 +189,7 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
+     // special Linger ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         spsh_l: space_shift_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "space_shift_layer";
@@ -195,7 +197,7 @@
             tapping-term-ms = <200>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&mo>, <&spc_sh>;
+            bindings = <&caps_word>, <&spc_sh>;
         };
 
         lk_qu: lk_qu {
@@ -206,7 +208,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp_qu>;
         };
-
+     // Encloser ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         SQT_cl: SQT_cl {
             compatible = "zmk,behavior-hold-tap";
             label = "SQT_clr";
@@ -231,9 +233,7 @@
             flavor = "tap-preferred";
             bindings = <&DQT_close>, <&kp>;
         };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // MOD MORPH
+     // MOD MORPH ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         
         dot_amps: dot_amps {
@@ -272,7 +272,7 @@
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp TAB>;
             mods = <(MOD_LALT|MOD_RALT)>;
-            keep-mods = <(MOD_LALT|MOD_RALT)>;
+          L  keep-mods = <(MOD_LALT|MOD_RALT)>;
         };
 
         del1: del1 {
@@ -282,6 +282,7 @@
             bindings = <&kp DEL>, <&kp LC(DEL)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+     // Sticky keys ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         skq: sticky_key_quick_release {
             compatible = "zmk,behavior-sticky-key";
@@ -294,9 +295,7 @@
     };
 
 
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-
+ // Combo ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
     combos {
         compatible = "zmk,combos";
         
@@ -347,8 +346,8 @@
                         bindings = <
 &kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH     &kp  DOT      &hm LBKT RBKT &kp  SLASH    &sqt_at          &none
 &kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &comma_par    &hm LCTRL A   &hm LALT  E   &hm LGUI  I   &hm_l NUM_L H    &kp  ENTER
-&kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &caps_word    &kp  MINUS    &kp  U        &kp  O        &kp  Y        &kp  B           &none
-                                                        &del1         &bsp2         &hm_l SYM_L R    &none            &none       &hm LSHIFT  SPACE  &spsh_l SYM_L A  &none
+&kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &none         &kp  MINUS    &kp  U        &kp  O        &kp  Y        &kp  B           &none
+                                                        &del1         &bsp2         &hm_l SYM_L R    &kp TAB               &none       &hm LSHIFT  SPACE  &spsh_l CAPS SPACE &none
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -383,8 +382,8 @@
                         bindings = <
 &kp  GRAVE    &kp  GRAVE    &kp  7        &kp  8        &kp  9        &kp  PERCENT                                                                   &trans        &trans           &trans        &trans        &trans        &trans        
 &kp  TAB      &hm_l NAV_L 0 &hm LGUI 1    &hm LALT 2    &hm LCTRL 3   &kp  DOLLAR                                                                    &trans        &hm LCTRL EXCL   &hm LALT  E   &hm LGUI  I   &none        &trans        
-&kp  LCTRL    &kp  Z        &kp  4        &kp  5        &kp  6        &EURO         &kp  ESC                                           &caps_word    &trans        &kp  QMARK        &kp  COMMA    &kp  DOT      &kp  SLASH    &trans        
-                                                        &trans        &trans        &hm_l SYM_L RETURN    &kp  TAB          &trans     &trans        &kp TAB       &trans
+&kp  LCTRL    &kp  Z        &kp  4        &kp  5        &kp  6        &EURO         &trans                                             &trans        &trans        &kp  QMARK        &kp  COMMA    &kp  DOT      &kp  SLASH    &trans        
+                                                        &trans        &trans        &hm_l SYM_L RETURN    &trans            &trans     &trans        &kp TAB       &trans
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -399,10 +398,10 @@
  *                                 |       |       |       |       |---| ADJ_L |       |       |       |
  */
                         bindings = <
-&kp  Copy     &kp  N4       &kp  Cut      &kp  Copy     &kp  Paste    &kp  Redo                                                                      &kp   K_APP   &leftleft    &downdown      &upupup       &rightright   &trans
-&kp  Cut      &kp  LSHFT    &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp Undo                                                                       &kp   PG_UP   &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &kp PG_DN
-&trans        &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5       &kp Undo                                           &kp  Redo     &kp   F6      &kp  HOME    &kp PG_DN      &kp   PG_UP   &kp  END      &kp RCTRL
-                                                        &trans        &trans        &kp  RETURN    &kp  TAB             &mo  SYM_L  &hm LSHIFT SPACE &kp TAB      &kp  RGUI 
+&none     &none         &kp  Cut      &kp  Copy     &kp  Paste    &kp  Redo                                                                      &kp   K_APP   &leftleft    &downdown      &upupup       &rightright   &trans
+&none     &kp  LSHFT    &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp Undo                                                                       &kp   PG_UP   &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &kp PG_DN
+&none     &none         &kp  0        &kp  0        &kp  0        &kp  0        &trans                                           &trans          &kp   F6      &kp  HOME    &kp PG_DN      &kp   PG_UP   &kp  END      &kp RCTRL
+                                                    &trans        &trans        &hm_l SYM_L RETURN  &trans           &mo  SYM_L  &hm LSHIFT SPACE &kp TAB      &kp  RGUI 
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -419,7 +418,7 @@
                         bindings = <
 &kp  INS      &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &kp DEL
 &none         &kp  BSLH     &kp  MINUS    &kp  EQUAL    &kp  LBKT     &kp  RBKT                                                                      &kp  HOME     &kp  RSHFT    &kp  RCTRL    &kp  LALT     &kp  RGUI     &kp END
-&trans        &kp  PIPE     &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &sk  RALT                                          &kp K_APP     &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
+&trans        &kp  PIPE     &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &trans                                             &trans        &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
                                                         &trans        &trans        &trans       &mo  ADJ_L               &trans       &trans        &trans        &trans
                         >;
 			
