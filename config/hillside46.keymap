@@ -37,46 +37,48 @@
         	bindings = <&macro_tap &kp SPACE &sk RSHIFT>;
 	    };
         
-        upupup: upupup {
-            label = "UPUPUP";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings
-                = <&macro_tap &kp UP &kp UP &kp UP &kp UP &kp UP>
-                ;
-        };
-        downdown: downdown {
-            label = "DOWNDOWN";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings
-                = <&macro_tap &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>
-                ;
-        };
-        rightright: rightright {
-            label = "RIGHTRIGHT";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings
-                = <&macro_tap &kp RIGHT &kp RIGHT &kp Right &kp RIGHT &kp RIGHT>
-                ;
-        };
-        leftleft: leftleft {
-            label = "LEFTLEFT";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings
-                = <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>
-                ;
-        };
+        // Arrows ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+            upupup: upupup {
+             label = "UPUPUP";
+             compatible = "zmk,behavior-macro";
+             #binding-cells = <0>;
+             wait-ms = <0>;
+             tap-ms = <0>;
+             bindings
+                 = <&macro_tap &kp UP &kp UP &kp UP &kp UP &kp UP>
+                 ;
+         };
+         downdown: downdown {
+             label = "DOWNDOWN";
+             compatible = "zmk,behavior-macro";
+             #binding-cells = <0>;
+             wait-ms = <0>;
+             tap-ms = <0>;
+             bindings
+                 = <&macro_tap &kp DOWN &kp DOWN &kp DOWN &kp DOWN &kp DOWN>
+                 ;
+         };
+         rightright: rightright {
+             label = "RIGHTRIGHT";
+             compatible = "zmk,behavior-macro";
+             #binding-cells = <0>;
+             wait-ms = <0>;
+             tap-ms = <0>;
+             bindings
+                 = <&macro_tap &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT &kp RIGHT>
+                 ;
+         };
+         leftleft: leftleft {
+             label = "LEFTLEFT";
+             compatible = "zmk,behavior-macro";
+             #binding-cells = <0>;
+             wait-ms = <0>;
+             tap-ms = <0>;
+             bindings
+                 = <&macro_tap &kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>
+                 ;
+         };
+        //  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         kp_qu: kpqu {
             label = "Key_QU";
             compatible = "zmk,behavior-macro";
