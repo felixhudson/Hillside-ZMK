@@ -18,11 +18,11 @@
 #define SYM_L    4
 #define ADJ_L    5
 
-#define Undo   LC(Z)
+#define Undo   LC(DE_Z)
 #define Cut    LC(X)
 #define Copy   LC(C)
 #define Paste  LC(V)
-#define Redo   LC(Y)
+#define Redo   LC(DE_Y)
 
 #define LEFT_ROW_0       0  1  2  3  4  5  
 #define LEFT_ROW_1      12 13 14 15 16 17
@@ -371,7 +371,7 @@
                         bindings = <
 &kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH     &kp  DOT      &hm LBKT RBKT &kp  SLASH    &sqt_at          &none
 &kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &comma_par    &hm LCTRL A   &hm LALT  E   &hm LGUI  I   &hm_l NUM_L H    &kp  ENTER
-&kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &none         &kp  MINUS    &kp  U        &kp  O        &kp  Y        &kp  B           &none
+&kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &none         &kp  MINUS    &kp  U        &kp  O        &kp  DE_Y        &kp  B           &none
                                                         &del1         &bsp2         &hm_l SYM_L R    &kp TAB               &none       &hm LSHIFT  SPACE  &spsh_l CAPS SPACE &none
                         >;
 			
