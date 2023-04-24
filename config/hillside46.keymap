@@ -369,9 +369,9 @@
  *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
  */
                         bindings = <
-&kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH     &kp  DOT      &hm LBKT RBKT &kp  SLASH    &sqt_at          &none
+&kp  GRAVE    &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  DE_HASH  &kp  DE_DOT   &hm DE_RBKT DE_LBKT &kp DE_SLASH &sqt_at     &none
 &kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &comma_par    &hm LCTRL A   &hm LALT  E   &hm LGUI  I   &hm_l NUM_L H    &kp  ENTER
-&kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &none         &kp  MINUS    &kp  U        &kp  O        &kp  DE_Y        &kp  B           &none
+&kp  LCTRL    &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &kp  ESC                                           &none         &kp DE_MINUS  &kp  U        &kp  O        &kp  DE_Y     &kp  B           &none
                                                         &del1         &bsp2         &hm_l SYM_L R    &kp TAB               &none       &hm LSHIFT  SPACE  &spsh_l CAPS SPACE &none
                         >;
 			
@@ -425,7 +425,7 @@
                         bindings = <
 &none     &none         &kp  Cut      &kp  Copy     &kp  Paste    &kp  Redo                                                                      &kp   K_APP   &leftleft    &downdown      &upupup       &rightright   &trans
 &none     &kp  LSHFT    &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp Undo                                                                       &kp   PG_UP   &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &kp PG_DN
-&none     &none         &kp  0        &kp  0        &kp  0        &kp  0        &trans                                           &trans          &kp   F6      &kp  HOME    &kp PG_DN      &kp   PG_UP   &kp  END      &kp RCTRL
+&none     &none         &kp  0        &kp  0        &kp  0        &kp  0        &trans                                           &trans          &kp   F6      &kp  HOME   &hm C_AC_SCROLL_DOWN PG_DN &hm C_AC_SCROLL_UP PG_UP &kp  END      &kp RCTRL
                                                     &trans        &trans        &hm_l SYM_L RETURN  &trans           &mo  SYM_L  &hm LSHIFT SPACE &kp TAB      &kp  RGUI 
                         >;
 			
