@@ -64,7 +64,7 @@
 #define DE_HASH     NON_US_HASH       // #
 #define DE_COLON    LS(DE_DOT)        // :
 #define DE_SLASH    LS(NUMBER_7)      // /
-#define DE_EQUAL     LS(NUMBER_0)      // =
+#define DE_EQUAL    LS(NUMBER_0)      // =
 #define DE_QMARK    LS(DE_SS)         // ?
 #define DE_GRV      LS(DE_ACUT)       // ` (dead)
 #define DE_SQT      LS(DE_HASH)       // '

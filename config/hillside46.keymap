@@ -412,7 +412,7 @@
  */
                         bindings = <
 &trans        &kp  GRAVE    &kp  N7       &kp  N8       &kp  N9        &kp  PERCENT                                                                   &trans        &trans            &trans        &trans        &trans       &trans        
-&trans        &hm_l NAV_L N0 &hm LGUI N1  &hm LALT N2   &hm LCTRL N3   &kp  DOLLAR                                                                    &trans        &hm LCTRL DE_EQUAL &hm LALT  D   &hm LGUI  I  &none        &trans        
+&trans        &hm_l NAV_L N0 &hm LGUI N1  &hm LALT N2   &hm LCTRL N3   &kp  DOLLAR                                                                    &trans        &hm LCTRL DE_EQUAL &hm LALT DE_PLUS &hm LGUI  I  &none        &trans        
 &trans        &kp  Z        &kp  N4       &kp  N5       &kp  N6        &kp  DE_EURO  &trans                                             &trans        &trans        &kp  QMARK        &kp  COMMA    &kp  DOT      &trans       &trans        
                                                         &trans         &trans        &hm_l SYM_L RETURN    &trans            &trans     &trans        &kp TAB       &trans
                         >;
@@ -441,14 +441,14 @@
                 sym_layer {
 /* SYM
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | INS   |   !   |   @   |   #   |   $   |   %   |-----------------------------------|   ^   |   &   |   *   |   (   |   )   | BSPC  |
- * |       |   \   |   -   |   =   |   [   |   ]   |-----------------------------------| HOME  | Shift | Ctrl  | Alt   | Gui   | END   |
- * | Ctrl  |   |   |   _   |   +   |   {   |   }   |SkAltGr|-------------------| MENU  | Mute  | Vol-  | Vol+  | Play  |       | Ctrl  |
- *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
+ * | INS   |   !   |   @   |   #   |   $   |   %   |-----------------------------------|   #   |   .   |  [ ]  |   "   |   '   |       |
+ * |       |   \   |   -   |   =   |   <   |   >   |-----------------------------------|   ,   |   /   |   _   |   ;   |   :   |  Ent  |
+ * | Ctrl  |   |   |   _   |   +   |   {   |   }   |       |-------------------|       |   -   |   &   |       |       |       |       |
+ *                                 |       |       |       |        |---|      |       |       |       |
  */
                         bindings = <
 &trans     &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &trans        &trans        &trans        &trans        &trans           &trans
-&trans     &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL DE_LT &kp  DE_GT                                                                   &trans        &hm LCTRL DE_SLASH &hm LALT DE_UNDER &hm LGUI  I &hm_l NUM_L H    &trans
+&trans     &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL DE_LT &kp  DE_GT                                                                   &trans        &hm LCTRL DE_SLASH &hm LALT DE_UNDER &hm LGUI  DE_SEMI &hm_l NUM_L DE_COLON  &trans
 &trans     &kp  PIPE     &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &trans                                             &trans        &trans        &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR        &trans
                                                      &trans        &trans        &trans       &trans                   &trans       &trans        &trans        &trans
                         >;
@@ -460,7 +460,7 @@
 /* ADJUST
  * -------------------------------------------------------------------------------------------------------------------------------------
  * |       | QWERTY| DVORAK| COLEMK|       |       |-----------------------------------|       |  F11  |  F12  |Prt Scr|EP_OFF | EP_ON |
- * | RESET | BT 0  | BT 1  | BT 2  | BT 3  | BT 4  |-----------------------------------|       |       |       |       |       | RESET |
+ * | RESET | BT 0  | BT 1  | BT 2  | BT 3  | BT 4  |-----------------------------------|       |       |Vol+   | Play  |       | RESET |
  * |       | LGUI  | LALT  | LCTRL | LSHIFT|       |BT CLR |-------------------|       |       |       |OUT_USB|OUT_BLE|       | BOOTL |
  *                                 |       |       |       |       |---|       |       |       |       |
  */
