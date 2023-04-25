@@ -36,20 +36,20 @@
 #define DE_UE       LEFT_BRACKET       // Ü
 #define DE_SS       MINUS              // ß
 
-#define DE_CIRC     GRAVE             // ^ (dead)
+#define DE_CARET    GRAVE             // ^ (dead)
 #define DE_EXCL     LS(NUMBER_1)      // !
 #define DE_DQT      LS(NUMBER_2)      // "
 #define DE_DLR      LS(NUMBER_4)      // $
 #define DE_AMPS     LS(NUMBER_6)      // &
 #define DE_PERC     LS(NUMBER_5)      // %
 
-#define DE_PIPE     RA(DE_LABK)       // |
+#define DE_PIPE     RA(DE_LT)       // |
 #define DE_AT       RA(DE_Q)          // @
-#define DE_TILD     RA(DE_PLUS)       // ~
+#define DE_TILDE    RA(DE_PLUS)       // ~
 #define DE_EURO     RA(DE_E)          // €
 #define DE_PLUS     RIGHT_BRACKET     // +
-#define DE_ASTR     LS(DE_PLUS)       // *
-#define DE_DEG      LS(DE_CIRC)       // °
+#define DE_STAR     LS(DE_PLUS)       // *
+#define DE_DEG      LS(DE_CARET)      // °
 #define DE_SECT     LS(NUMBER_3)      // §
 
 #define DE_LPAR     LS(NUMBER_8)      // (
@@ -66,7 +66,7 @@
 #define DE_SLASH    LS(NUMBER_7)      // /
 #define DE_EQUAL    LS(NUMBER_0)      // =
 #define DE_QMARK    LS(DE_SS)         // ?
-#define DE_GRV      LS(DE_ACUT)       // ` (dead)
+#define DE_GRAVE    LS(DE_ACUT)       // ` (dead)
 #define DE_SQT      LS(DE_HASH)       // '
 #define DE_SEMI     LS(DE_COMMA)      // ;
 #define DE_UNDER    LS(DE_MINUS)      // _
