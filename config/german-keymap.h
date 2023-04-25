@@ -28,8 +28,8 @@
 #define DE_Z        Y                  // Z
 
 #define DE_DOT      PERIOD             // .
-#define DE_COMM     COMMA              // ,
-#define DE_MINS     SLASH              // -
+#define DE_COMMA    COMMA              // ,
+#define DE_MINUS    SLASH              // -
 
 #define DE_AE       SINGLE_QUOTE       // Ä
 #define DE_OE       SEMICOLON          // Ö
@@ -37,8 +37,8 @@
 #define DE_SS       MINUS              // ß
 
 #define DE_CIRC     GRAVE             // ^ (dead)
-#define DE_EXLM     LS(NUMBER_1)      // !
-#define DE_DQUO     LS(NUMBER_2)      // "
+#define DE_EXCL     LS(NUMBER_1)      // !
+#define DE_DQT      LS(NUMBER_2)      // "
 #define DE_DLR      LS(NUMBER_4)      // $
 #define DE_AMPR     LS(NUMBER_6)      // &
 #define DE_PERC     LS(NUMBER_5)      // %
@@ -52,12 +52,12 @@
 #define DE_DEG      LS(DE_CIRC)       // °
 #define DE_SECT     LS(NUMBER_3)      // §
 
-#define DE_LPRN     LS(NUMBER_8)      // (
-#define DE_RPRN     LS(NUMBER_9)      // )
+#define DE_LPAR     LS(NUMBER_8)      // (
+#define DE_RPAR     LS(NUMBER_9)      // )
 #define DE_LCBR     RA(NUMBER_7)      // {
 #define DE_RCBR     RA(NUMBER_0)      // }
-#define DE_LBRC     RA(NUMBER_8)      // [
-#define DE_RBRC     RA(NUMBER_9)      // ]
+#define DE_LBKT     RA(NUMBER_8)      // [
+#define DE_RBKT     RA(NUMBER_9)      // ]
 #define DE_LABK     NON_US_BACKSLASH  // <
 #define DE_RABK     LS(DE_LABK)       // >
 #define DE_ACUT     EQUAL             // ´ (dead)
@@ -67,7 +67,7 @@
 #define DE_EQL      LS(NUMBER_0)      // =
 #define DE_QUES     LS(DE_SS)         // ?
 #define DE_GRV      LS(DE_ACUT)       // ` (dead)
-#define DE_QUOT     LS(DE_HASH)       // '
+#define DE_SQT      LS(DE_HASH)       // '
 #define DE_SCLN     LS(DE_COMM)       // ;
 #define DE_UNDS     LS(DE_MINS)       // _
 #define DE_BSLS     RA(DE_SS)         // (backslash)
