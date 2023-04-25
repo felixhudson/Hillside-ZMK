@@ -63,7 +63,7 @@
 #define DE_ACUT     EQUAL             // ´ (dead)
 #define DE_HASH     NON_US_HASH       // #
 #define DE_COLN     LS(DE_DOT)        // :
-#define DE_SLSH     LS(NUMBER_7)      // /
+#define DE_SLASH    LS(NUMBER_7)      // /
 #define DE_EQL      LS(NUMBER_0)      // =
 #define DE_QUES     LS(DE_SS)         // ?
 #define DE_GRV      LS(DE_ACUT)       // ` (dead)
