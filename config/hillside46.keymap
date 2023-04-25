@@ -288,8 +288,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BSP1";
             #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp LC(BSPC)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            bindings = <&kp LC(BSPC)>, <&kp BSPC>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         bsp2: bsp2 {
             compatible = "zmk,behavior-mod-morph";
