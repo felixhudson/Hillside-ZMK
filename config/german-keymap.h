@@ -40,7 +40,7 @@
 #define DE_EXCL     LS(NUMBER_1)      // !
 #define DE_DQT      LS(NUMBER_2)      // "
 #define DE_DLR      LS(NUMBER_4)      // $
-#define DE_AMPR     LS(NUMBER_6)      // &
+#define DE_AMPS     LS(NUMBER_6)      // &
 #define DE_PERC     LS(NUMBER_5)      // %
 
 #define DE_PIPE     RA(DE_LABK)       // |
