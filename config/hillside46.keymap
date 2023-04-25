@@ -448,7 +448,8 @@
  */
                         bindings = <
 &trans     &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &trans        &trans             &trans            &trans            &trans                &trans
-&none     &kp  LSHFT    &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp Undo                                                                       &kp   PG_UP   &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &kp PG_DN
+&trans     &hm_l NAV_L C &hm LGUI S    &hm LALT N2   &hm LCTRL DE_LT &kp  DE_GT                                                                   &trans        &hm LCTRL DE_EQUAL &hm LALT DE_PLUS &hm LGUI  I  &none        &trans        
+// &trans     &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL DE_LT &kp  DE_GT                                                                   &trans        &hm LCTRL DE_SLASH &hm LALT DE_UNDER &hm LGUI  DE_SEMI &hm_l NUM_L DE_COLON  &trans
 &trans     &kp  PIPE     &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &trans                                             &trans        &trans        &kp  AMPS          &kp  ASTRK        &kp  LPAR         &kp  RPAR             &trans
                                                      &trans        &trans        &trans       &trans                   &trans       &trans        &trans        &trans 
                         >;
