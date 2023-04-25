@@ -417,9 +417,9 @@
  *                                 |       |       |       |        |---|      |       |       |       |
  */
                         bindings = <
-&kp  GRAVE    &kp  GRAVE    &kp  N7       &kp  N8       &kp  N9        &kp  PERCENT                                                                   &trans        &trans           &trans        &trans        &trans        &trans        
-&kp  TAB      &hm_l NAV_L N0 &hm LGUI N1  &hm LALT N2   &hm LCTRL N3   &kp  DOLLAR                                                                    &trans        &hm LCTRL EXCL   &hm LALT  E   &hm LGUI  I   &none        &trans        
-&kp  LCTRL    &kp  Z        &kp  N4       &kp  N5       &kp  N6        &EURO         &trans                                             &trans        &trans        &kp  QMARK        &kp  COMMA    &kp  DOT      &kp  SLASH    &trans        
+&trans        &kp  GRAVE    &kp  N7       &kp  N8       &kp  N9        &kp  PERCENT                                                                   &trans        &trans            &trans           &trans         &trans       &trans        
+&trans        &hm_l NAV_L N0 &hm LGUI N1  &hm LALT N2   &hm LCTRL N3   &kp  D                                                                         &trans        &hm LCTRL DE_AE   &hm LALT DE_PLUS &hm LGUI DE_SS &none        &trans        
+&trans        &kp  Z        &kp  N4       &kp  N5       &kp  N6        &kp  DE_EURO  &trans                                             &trans        &trans        &kp  DE_UE        &kp  DE_OE       &kp  DOT       &trans       &trans        
                                                         &trans         &trans        &hm_l SYM_L RETURN    &trans            &trans     &trans        &kp TAB       &trans
                         >;
 			
@@ -437,7 +437,7 @@
                         bindings = <
 &none     &none         &kp  Cut      &kp  Copy     &kp  Paste    &kp  Redo                                                                      &kp   K_APP   &leftleft    &downdown      &upupup       &rightright   &trans
 &none     &kp  LSHFT    &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp Undo                                                                       &kp   PG_UP   &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &kp PG_DN
-&none     &none         &kp  0        &kp  0        &kp  0        &kp  0        &trans                                           &trans          &kp   F6      &kp  HOME    &kp PG_DN      &kp   PG_UP   &kp  END      &kp RCTRL
+&none     &none         &kp  0        &kp  0        &kp  LA(F4)        &kp  0        &trans                                           &trans     &kp   F6      &kp  HOME    &hm C_AC_SCROLL_DOWN PG_DN &hm C_AC_SCROLL_UP PG_UP &kp  END      &kp RCTRL
                                                     &trans        &trans        &hm_l SYM_L RETURN  &trans           &mo  SYM_L  &hm LSHIFT SPACE &kp TAB      &kp  RGUI 
                         >;
 			
@@ -447,16 +447,16 @@
                 sym_layer {
 /* SYM
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | INS   |   !   |   @   |   #   |   $   |   %   |-----------------------------------|   ^   |   &   |   *   |   (   |   )   | BSPC  |
- * |       |   \   |   -   |   =   |   [   |   ]   |-----------------------------------| HOME  | Shift | Ctrl  | Alt   | Gui   | END   |
- * | Ctrl  |   |   |   _   |   +   |   {   |   }   |SkAltGr|-------------------| MENU  | Mute  | Vol-  | Vol+  | Play  |       | Ctrl  |
- *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
+ * | INS   |   \   |   @   |   °   |   $   |   %   |-----------------------------------|   #   |   .   |  [ ]  |   "   |   '   |       |
+ * |       |   !   |   ~   |   +   |   <   |   >   |-----------------------------------|   ,   |   /   |   *   |   =   |   _   |  Ent  |
+ * | Ctrl  |   |   |   ^   |   ´   |   `   |       |       |-------------------|       |   -   |   &   |   {   |   }   |   )   |       |
+ *                                 |       |       |       |        |---|      |       |       |       |
  */
                         bindings = <
-&kp  INS      &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &kp DEL
-&none         &kp  BSLH     &kp  MINUS    &kp  EQUAL    &kp  LBKT     &kp  RBKT                                                                      &kp  HOME     &kp  RSHFT    &kp  RCTRL    &kp  LALT     &kp  RGUI     &kp END
-&trans        &kp  PIPE     &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &trans                                             &trans        &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
-                                                        &trans        &trans        &trans       &mo  ADJ_L               &trans       &trans        &trans        &trans
+&trans   &kp  BSLH           &kp  DE_AT        &kp  DE_DEG        &kp  DOLLAR     &kp  PERCENT                                                                &trans        &trans             &trans            &trans            &trans                &trans
+&trans   &hm_l NAV_L DE_EXCL &hm LGUI DE_TILDE &hm LALT DE_PLUS &hm LCTRL DE_LT &kp  DE_GT                                                                  &trans        &hm LCTRL DE_SLASH &hm LALT DE_STAR  &hm LGUI DE_EQUAL &hm_l NUM_L DE_UNDER  &trans
+&trans   &kp  DE_PIPE        &kp DE_CARET      &kp  DE_ACUT     &kp  DE_GRAVE   &kp  R         &trans                                         &trans        &trans        &kp  AMPS          &kp  DE_LBKT      &kp  DE_RBKT      &kp  DE_RPAR          &trans
+                                                      &trans        &trans        &trans       &trans              &trans       &trans        &trans        &trans 
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
