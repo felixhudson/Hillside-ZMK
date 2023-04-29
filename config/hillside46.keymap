@@ -11,12 +11,13 @@
 #include <dt-bindings/zmk/outputs.h>
 #include "german-keymap.h"
 
-#define HDVB_L 0
+#define HDVB_L   0
 #define QWERTY_L 1
-#define NUM_L 2
-#define NAV_L    3
-#define SYM_L    4
-#define ADJ_L    5
+#define NUM_L    2
+#define F_L      3
+#define NAV_L    4
+#define SYM_L    5
+#define ADJ_L    6
 
 #define Undo   LC(DE_Z)
 #define Cut    LC(X)
@@ -409,6 +410,24 @@
                 };
 		
                 num_layer {
+/* NUM-Layer
+ * -------------------------------------------------------------------------------------------------------------------------------------
+ * | `     |   Q   |   W   |   F   |   P   |   B   |-----------------------------------|   #   |   .   |  [ ]  |   "   |   '   |       |
+ * |       |   !   |   -   |   =   |   <   |   >   |-----------------------------------|   ,   |   Ä   |       |   ß   |       |  Ent  |
+ * | Ctrl  |   |   |   ^   |   +   |   {   |   }   |       |-------------------|       |   -   |   Ü   |   ö   |       |       |       |
+ *                                 |       |       |       |        |---|      |       |       |       |
+ */
+                        bindings = <
+&trans        &kp  GRAVE    &kp  N7       &kp  N8       &kp  N9        &kp  PERCENT                                                                   &trans        &trans            &trans           &trans         &trans       &trans        
+&trans        &hm_l NAV_L N0 &hm LGUI N1  &hm LALT N2   &hm LCTRL N3   &kp  D                                                                         &trans        &hm LCTRL DE_AE   &hm LALT DE_PLUS &hm LGUI DE_SS &none        &trans        
+&trans        &kp  Z        &kp  N4       &kp  N5       &kp  N6        &kp  DE_EURO  &trans                                             &trans        &trans        &kp  DE_UE        &kp  DE_OE       &kp  DOT       &trans       &trans        
+                                                        &trans         &trans        &hm_l SYM_L RETURN    &trans            &trans     &trans        &hm_l SYM_L SPACE  &trans
+                        >;
+			
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                };
+		
+                l_layer {
 /* NUM-Layer
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | `     |   Q   |   W   |   F   |   P   |   B   |-----------------------------------|   #   |   .   |  [ ]  |   "   |   '   |       |
