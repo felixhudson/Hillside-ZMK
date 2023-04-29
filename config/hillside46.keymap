@@ -372,7 +372,7 @@
         combo_brac {
             timeout-ms = <50>;
             key-positions = <18 19>;
-            bindings = <&PAR_cl T T>;
+            bindings = <&PAR_cl DE_LPAR DE_LPAR>;
         };
 
     };
