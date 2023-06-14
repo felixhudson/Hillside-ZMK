@@ -251,7 +251,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            bindings = <&skq RSHIFT>, <&kp>;
+            bindings = <&skq>, <&kp>;
         };
 
         lk_sp: lk_sp {
@@ -260,7 +260,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <400>;
             flavor = "tap-preferred";
-            bindings = <&kp LSHIFT>, <&kp>;
+            bindings = <&kp>, <&kp>;
         };
 
         
