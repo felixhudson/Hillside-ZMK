@@ -234,6 +234,26 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp_qu>;
         };
+        
+        lk_sp1: lk_sp1 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "lk_sp1";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&skq RSHIFT>, <&kp SPACE>;
+        };
+
+        lk_sp: lk_sp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "lk_sp";
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            flavor = "tap-preferred";
+            bindings = <&lk_sp1 SPACE SPACE>, <&kp LSHIFT>;
+        };
+
+        
      // Encloser ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         SQT_cl: SQT_cl {
             compatible = "zmk,behavior-hold-tap";
