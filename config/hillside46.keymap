@@ -262,6 +262,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&lk_sp1>;
         };
+       tes: tes {
+            compatible = "zmk,behavior-hold-tap";
+            label = "tes";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            flavor = "tap-preferred";
+            bindings = <&kp SPACE>, <&kp ENTER>;
+        };
 
         
      // Encloser ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
