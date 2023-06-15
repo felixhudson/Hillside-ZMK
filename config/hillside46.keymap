@@ -215,16 +215,6 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
-     // Sticky keys ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        skq: sticky_key_quick_release {
-            compatible = "zmk,behavior-sticky-key";
-            label = "STICKY_KEY_QUICK_RELEASE";
-            #binding-cells = <1>;
-            bindings = <&kp>;
-            release-after-ms = <1000>;
-            quick-release;
-        };
      // special Linger ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         spsh_l: space_shift_layer {
             compatible = "zmk,behavior-hold-tap";
@@ -244,24 +234,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp_qu>;
         };
-        
-        lk_sp1: lk_sp1 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "lk_sp1";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            bindings = <&skq>, <&kp>;
-        };
-
-        lk_sp: lk_sp {
-            compatible = "zmk,behavior-hold-tap";
-            label = "lk_sp";
-            #binding-cells = <2>;
-            tapping-term-ms = <400>;
-            flavor = "tap-preferred";
-        };
-
         
      // Encloser ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         SQT_cl: SQT_cl {
@@ -337,7 +309,16 @@
             bindings = <&kp DEL>, <&kp LC(DEL)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+     // Sticky keys ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+        skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_KEY_QUICK_RELEASE";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-release;
+        };
     };
 
 
@@ -416,7 +397,7 @@
                         bindings = <
 &none         &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  DE_HASH  &kp  DE_DOT   &hm DE_RBKT DE_LBKT &DQT_cl DQT DE_DQT &sqt_at          &none
 &kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &comma_par    &hm LCTRL A   &hm LALT  E   &hm LGUI  I   &hm_l NUM_L H    &kp  ENTER
-&none         &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &mo  ADJ_L                                         &lk_sp &kp RSHIFT &kp RSHFT  &kp DE_MINUS  &kp  U        &kp  O        &kp  DE_Y     &kp  B           &lk_sp1 SPACE SPACE
+&none         &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &mo  ADJ_L                                         &none         &kp DE_MINUS  &kp  U        &kp  O        &kp  DE_Y     &kp  B           &none
                                                         &del1         &bsp2         &hm_l SYM_L R    &kp TAB               &kp ENTER   &hm LSHIFT  SPACE  &spc_sh &none
                         >;
 			
