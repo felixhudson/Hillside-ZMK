@@ -260,7 +260,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <400>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&lk_sp1>;
         };
 
         
@@ -417,7 +416,7 @@
                         bindings = <
 &none         &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  DE_HASH  &kp  DE_DOT   &hm DE_RBKT DE_LBKT &DQT_cl DQT DE_DQT &sqt_at          &none
 &kp  TAB      &hm_l NAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &comma_par    &hm LCTRL A   &hm LALT  E   &hm LGUI  I   &hm_l NUM_L H    &kp  ENTER
-&none         &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &mo  ADJ_L                                         &kp LSHIFT  &kp DE_MINUS  &kp  U        &kp  O        &kp  DE_Y     &kp  B           &lk_sp1 SPACE SPACE
+&none         &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &mo  ADJ_L                                         &lk_sp &kp RSHIFT &kp RSHFT  &kp DE_MINUS  &kp  U        &kp  O        &kp  DE_Y     &kp  B           &lk_sp1 SPACE SPACE
                                                         &del1         &bsp2         &hm_l SYM_L R    &kp TAB               &kp ENTER   &hm LSHIFT  SPACE  &spc_sh &none
                         >;
 			
