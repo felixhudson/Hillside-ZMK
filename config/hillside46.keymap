@@ -413,9 +413,9 @@
                 default_layer {
 
                         bindings = <
-&none         &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  DE_HASH  &kp  DE_DOT   &hm DE_RBKT DE_LBKT &DQT_cl DQT DE_DQT &sqt_at          &none
+&none         &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH  &kp  DOT   &hm RBKT LBKT &DQT_cl DQT DQT &sqt_at          &none
 &kp  TAB      &hm_l NAV_L C &hm LCTRL S   &hm LALT N    &hm LGUI T    &kp  K                                                                         &comma_par    &hm LGUI A    &hm LALT  E   &hm LCTRL  I   &hm_l NUM_L H    &kp  ENTER
-&none         &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &mo  ADJ_L                                         &none         &kp DE_MINUS  &kp  U        &kp  O        &kp  DE_Y     &kp  B           &none
+&none         &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &mo  ADJ_L                                         &none         &kp MINUS  &kp  U        &kp  O        &kp  Y     &kp  B           &none
                                                         &kp DEL         &kp BSPC         &hm_l SYM_L R    &kp TAB               &kp ENTER   &hm LSHIFT  SPACE  &spc_sh &none
                         >;
 			
