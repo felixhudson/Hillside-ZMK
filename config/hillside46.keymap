@@ -115,7 +115,7 @@
              #binding-cells = <0>;
              wait-ms = <0>;
              tap-ms = <0>;
-             bindings = <&macro_tap &kp LC(X) &kp DE_SQT &kp DE_SQT &kp LEFT &kp LC(V)>
+             bindings = <&macro_tap &kp LG(X) &kp DE_SQT &kp DE_SQT &kp LEFT &kp LG(V)>
                  ;
          };
          PAR_close: PAR_close {
@@ -124,7 +124,7 @@
              #binding-cells = <0>;
              wait-ms = <0>;
              tap-ms = <0>;
-             bindings = <&macro_tap &kp LC(X) &kp DE_LPAR &kp DE_RPAR &kp LEFT &kp LC(V)>
+             bindings = <&macro_tap &kp LG(X) &kp DE_LPAR &kp DE_RPAR &kp LEFT &kp LG(V)>
                  ;
          };
          DQT_close: DQT_close {
@@ -133,7 +133,7 @@
              #binding-cells = <0>;
              wait-ms = <0>;
              tap-ms = <0>;
-             bindings = <&macro_tap &kp LC(X) &kp DE_DQT &kp DE_DQT &kp LEFT &kp LC(V)>
+             bindings = <&macro_tap &kp LG(X) &kp DE_DQT &kp DE_DQT &kp LEFT &kp LG(V)>
                  ;
          };
         // Signs ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -167,7 +167,7 @@
              #binding-cells = <0>;
              wait-ms = <0>;
              tap-ms = <0>;
-             bindings = <&macro_tap &kp LC(X) &kp DE_SQT &kp DE_SQT &kp LEFT &kp LC(V)>
+             bindings = <&macro_tap &kp LG(X) &kp DE_SQT &kp DE_SQT &kp LEFT &kp LG(V)>
                  ;
          };
     };
@@ -298,6 +298,7 @@
             bindings = <&kp LC(BSPC)>, <&kp BSPC>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
+        
         bsp2: bsp2 {
             compatible = "zmk,behavior-mod-morph";
             label = "BSP2";
@@ -442,8 +443,8 @@
                 nav_layer {
 
                         bindings = <
-&none     &none         &kp  LC(X)      &kp  LC(C)     &kp  LC(V)    &kp  LC(DE_Y)                                                                      &kp   K_APP   &leftleft    &downdown      &upupup       &rightright   &trans
-&none     &kp  LSHFT    &kp  LCTRL     &kp  LALT     &kp  LGUI    &kp LC(DE_Z)                                                                       &kp   PG_UP   &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &trans
+&none     &none         &kp  LG(X)      &kp  LG(C)     &kp  LG(V)    &kp  LG(LS(DE_Z))                                                                      &kp   K_APP   &leftleft    &downdown      &upupup       &rightright   &trans
+&none     &kp  LSHFT    &kp  LCTRL     &kp  LALT     &kp  LGUI    &kp LG(DE_Z)                                                                       &kp   PG_UP   &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &trans
 &none     &none         &kp  0        &kp  0        &kp  LA(F4)        &kp  0        &trans                                           &trans     &kp   F6      &kp  HOME    &hm C_AC_SCROLL_DOWN PG_DN &hm C_AC_SCROLL_UP PG_UP &kp  END      &trans
                                                     &trans        &trans        &hm_l SYM_L RETURN  &trans           &mo  SYM_L  &hm LSHIFT SPACE &kp TAB      &trans 
                         >;
