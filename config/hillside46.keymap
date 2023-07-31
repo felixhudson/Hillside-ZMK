@@ -115,7 +115,7 @@
              #binding-cells = <0>;
              wait-ms = <0>;
              tap-ms = <0>;
-             bindings = <&macro_tap &kp LG(X) &kp DE_SQT &kp DE_SQT &kp LEFT &kp LG(V)>
+             bindings = <&macro_tap &kp LG(X) &kp SQT &kp SQT &kp LEFT &kp LG(V)>
                  ;
          };
          PAR_close: PAR_close {
@@ -124,7 +124,7 @@
              #binding-cells = <0>;
              wait-ms = <0>;
              tap-ms = <0>;
-             bindings = <&macro_tap &kp LG(X) &kp DE_LPAR &kp DE_RPAR &kp LEFT &kp LG(V)>
+             bindings = <&macro_tap &kp LG(X) &kp LPAR &kp RPAR &kp LEFT &kp LG(V)>
                  ;
          };
          DQT_close: DQT_close {
@@ -133,7 +133,7 @@
              #binding-cells = <0>;
              wait-ms = <0>;
              tap-ms = <0>;
-             bindings = <&macro_tap &kp LG(X) &kp DE_DQT &kp DE_DQT &kp LEFT &kp LG(V)>
+             bindings = <&macro_tap &kp LG(X) &kp DQT &kp DQT &kp LEFT &kp LG(V)>
                  ;
          };
         // Signs ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -172,6 +172,30 @@
                 <&macro_tap>,
                 <&kp A>;
         };
+        o_uml: o_uml {
+            compatible = "zmk,behavior-macro";
+            label = "O_UML";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT &kp U>,
+                <&macro_release>,
+                <&kp U &kp LALT>,
+                <&macro_tap>,
+                <&kp O>;
+        };
+        u_uml: u_uml {
+            compatible = "zmk,behavior-macro";
+            label = "U_UML";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT &kp U>,
+                <&macro_release>,
+                <&kp U &kp LALT>,
+                <&macro_tap>,
+                <&kp U>;
+        };
         // Other ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
          schnell_sch: schnell {
              label = "Schau_mal";
@@ -179,7 +203,7 @@
              #binding-cells = <0>;
              wait-ms = <0>;
              tap-ms = <0>;
-             bindings = <&macro_tap &kp LG(X) &kp DE_SQT &kp DE_SQT &kp LEFT &kp LG(V)>
+             bindings = <&macro_tap &kp LG(X) &kp SQT &kp SQT &kp LEFT &kp LG(V)>
                  ;
          };
     };
@@ -285,17 +309,25 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&a_uml>;
         };
-
+        o_um: o_um {
+            compatible = "zmk,behavior-hold-tap";
+            label = "O_UM";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&o_uml>;
+        };
+        u_um: u_um {
+            compatible = "zmk,behavior-hold-tap";
+            label = "U_UM";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&u_uml>;
+        };
      // MOD MORPH ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         
-        dot_amps: dot_amps {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_AMPS";
-            #binding-cells = <0>;
-            bindings = <&kp DE_DOT>, <&kp DE_AMPS>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
 
         comma_par: comma_par {
             compatible = "zmk,behavior-mod-morph";
@@ -374,7 +406,7 @@
         combo_z {
             timeout-ms = <50>;
             key-positions = <1 2>;
-            bindings = <&kp DE_Z>;
+            bindings = <&kp Z>;
             layers = <0>;
         };
 
