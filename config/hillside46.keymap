@@ -462,7 +462,7 @@
 
                         bindings = <
 &trans        &kp F12         &kp  F7       &kp  F8       &kp  F9        &kp  PERCENT                                                                   &trans        &trans            &trans           &trans         &trans       &trans        
-&trans        &hm_l NAV_L F10 &hm LCTRL F1   &hm LALT F2   &hm LGUI F3   &kp  D                                                                         &trans        &hm LGUI A_UML   &hm LALT PLUS &hm LCTRL LA(S)    &none        &trans        
+&trans        &hm_l NAV_L F10 &hm LCTRL F1   &hm LALT F2   &hm LGUI F3   &kp  D                                                                         &trans        &hm LGUI A   &hm LALT PLUS &hm LCTRL LA(S)    &none        &trans        
 &trans        &kp F11         &kp  F4       &kp  F5       &kp  F6        &kp  LA(LS(NUMBER_2))  &trans                                             &trans        &trans        &kp  DE_UE        &kp  DE_OE       &kp  DOT       &trans       &trans        
                                                           &trans         &trans        &hm_l SYM_L RETURN    &trans            &trans     &trans        &trans        &trans
                         >;
