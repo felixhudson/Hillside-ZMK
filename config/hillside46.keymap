@@ -494,7 +494,7 @@
  */
                         bindings = <
 &none         &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  DE_HASH  &kp  DE_DOT   &hm DE_RBKT DE_LBKT &DQT_cl DQT DE_DQT &sqt_at          &none
-&kp  TAB      &hm_l wNAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &comma_par    &hm LCTRL A   &hm LALT  E   &hm LGUI  I   &hm_l NUM_L H    &kp  ENTER
+&kp  TAB      &hm_l wNAV_L C &hm LGUI S    &hm LALT N    &hm LCTRL T   &kp  K                                                                         &comma_par    &hm LCTRL A   &hm LALT  E   &hm LGUI  I   &hm_l wNUM_L H    &kp  ENTER
 &none         &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &mo  ADJ_L                                         &none         &kp DE_MINUS  &kp  U        &kp  O        &kp  DE_Y     &kp  B           &none
                                                         &del1         &bsp2         &hm_l wSYM_L R    &kp TAB               &kp ENTER   &hm LSHIFT  SPACE  &spc_sh &none
                         >;
@@ -584,7 +584,7 @@
  */
                         bindings = <
 &trans   &kp  BSLH           &kp  DE_AT        &kp  DE_DEG        &kp  DOLLAR     &kp  PERCENT                                                                &trans        &trans             &trans            &trans            &trans                &trans
-&trans   &hm_l wNAV_L DE_EXCL &hm LGUI DE_TILDE &hm LALT DE_PLUS &hm LCTRL DE_LT &kp  DE_GT                                                                  &trans        &hm LCTRL DE_SLASH &hm LALT DE_STAR  &hm LGUI DE_EQUAL &hm_l NUM_L DE_UNDER  &trans
+&trans   &hm_l wNAV_L DE_EXCL &hm LGUI DE_TILDE &hm LALT DE_PLUS &hm LCTRL DE_LT &kp  DE_GT                                                                  &trans        &hm LCTRL DE_SLASH &hm LALT DE_STAR  &hm LGUI DE_EQUAL &hm_l wNUM_L DE_UNDER  &trans
 &trans   &kp  DE_PIPE        &kp DE_CARET      &kp  DE_ACUT     &kp  DE_GRAVE   &kp  R         &trans                                         &trans        &trans        &kp  DE_AMPS          &kp  DE_LBRC      &kp  DE_RBRC      &kp  DE_RPAR          &trans
                                                       &trans        &trans        &trans       &trans              &trans       &trans        &trans        &trans 
                         >;
@@ -603,7 +603,7 @@
  *                                 |       |       |       |       |---|       |       |       |       |
  */
                         bindings = <
-&none         &to  HDVB_L   &none         &none         &none         &none                                                                             &none             &kp   F11          &kp   F12  &kp PRINTSCREEN   &ext_power EP_OFF  &ext_power EP_ON
+&none         &to  HDVB_L   &to wHDVB_L   &none         &none         &none                                                                             &none             &kp   F11          &kp   F12  &kp PRINTSCREEN   &ext_power EP_OFF  &ext_power EP_ON
 &none         &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &bt  BT_SEL 4                                                                     &kp  C_MUTE       &kp  C_VOL_DN      &kp  C_VOL_UP    &kp  C_PP      &none           &kp  D
 &none         &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp LSHIFT    &none         &none                                              &bt BT_CLR       &none             &none              &out  OUT_USB    &out  OUT_BLE  &none           &bootloader
                                                         &trans        &trans        &trans        &trans                 &trans        &trans           &trans            &trans 
