@@ -54,6 +54,7 @@
 	        #binding-cells = <0>;
         	bindings = <&macro_tap &kp SPACE &skq RSHIFT>;
 	    };
+
         
         // Arrows ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
             upupup: upupup {
@@ -469,7 +470,7 @@
 &none         &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH  &kp  DOT   &hm RBKT LBKT &DQT_cl DQT DQT &sqt_at          &none
 &kp  TAB      &hm_l NAV_L C &hm LCTRL S   &hm LALT N    &hm LGUI T    &kp  K                                                                         &comma_par    &hm LGUI A    &hm LALT  E   &hm LCTRL  I   &hm_l NUM_L H    &kp  ENTER
 &none         &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &mo  ADJ_L                                         &none         &kp MINUS  &kp  U        &kp  O        &kp  Y     &kp  B           &none
-                                                        &kp DEL         &kp BSPC         &hm_l SYM_L R    &kp TAB               &kp ENTER   &hm LSHIFT  SPACE  &spc_sh &none
+                                                        &kp DEL         &kp BSPC         &hm_l SYM_L R    &kp TAB               &kp LG(LC(LS(LALT)))  &hm LSHIFT  SPACE  &spc_sh &none
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
