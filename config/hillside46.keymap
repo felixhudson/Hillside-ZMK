@@ -333,14 +333,14 @@
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_par";
             #binding-cells = <0>;
-            bindings = <&kp DE_COMMA>, <&PAR_cl DE_LPAR DE_LPAR>;
+            bindings = <&kp COMMA>, <&PAR_cl LPAR LPAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         sqt_at: SQTDQT {
             compatible = "zmk,behavior-mod-morph";
             label = "SQTDQT";
             #binding-cells = <0>;
-            bindings = <&SQT_cl DE_SQT DE_SQT>, <&kp DE_AT>;
+            bindings = <&SQT_cl SQT SQT>, <&kp AT_SIGN>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -426,7 +426,7 @@
         combo_COLON {
             timeout-ms = <50>;
             key-positions = <8 9>;
-            bindings = <&kp DE_COLON>;
+            bindings = <&kp COLON>;
         };
 
         combo_SEMI {
@@ -526,7 +526,7 @@
                 sym_layer {
 
                         bindings = <
-&trans   &kp  BSLH           &kp  DE_AT        &kp  DE_DEG        &kp  DOLLAR     &kp  PERCENT                                                                &trans        &trans             &trans            &trans            &trans                &trans
+&trans   &kp  BSLH           &kp  AT_SIGN        &kp  LA(LS(NUMBER_8))       &kp  DOLLAR     &kp  PERCENT                                                                &trans        &trans             &trans            &trans            &trans                &trans
 &trans   &hm_l NAV_L DE_EXCL &hm LCTRL DE_TILDE &hm LALT DE_PLUS &hm LGUI DE_LT &kp  DE_GT                                                                  &trans        &hm LGUI DE_SLASH &hm LALT DE_STAR  &hm LCTRL DE_EQUAL &hm_l NUM_L DE_UNDER  &trans
 &trans   &kp  DE_PIPE        &kp DE_CARET      &kp  DE_ACUT     &kp  DE_GRAVE   &kp  R         &trans                                         &trans        &trans        &kp  DE_AMPS          &kp  DE_LBRC      &kp  DE_RBRC      &kp  DE_RPAR          &trans
                                                       &trans        &trans        &trans       &trans              &trans       &trans        &trans        &trans 
