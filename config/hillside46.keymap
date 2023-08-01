@@ -432,25 +432,25 @@
         combo_SEMI {
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&kp DE_SEMI>;
+            bindings = <&kp SEMI>;
         };
 
         combo_ques {
             timeout-ms = <50>;
             key-positions = <9 10>;
-            bindings = <&kp DE_QMARK>;
+            bindings = <&kp QMARK>;
         };
 
         combo_excl {
             timeout-ms = <50>;
             key-positions = <7 10>;
-            bindings = <&kp DE_EXCL>;
+            bindings = <&kp EXCL>;
         };
 
         combo_brac {
             timeout-ms = <50>;
             key-positions = <18 19>;
-            bindings = <&PAR_cl DE_LPAR DE_LPAR>;
+            bindings = <&PAR_cl LPAR LPAR>;
         };
 
     };
