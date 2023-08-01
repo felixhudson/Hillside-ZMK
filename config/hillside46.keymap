@@ -58,7 +58,10 @@
 	        compatible = "zmk,behavior-macro";
         	label = "HYPER_O";
 	        #binding-cells = <0>;
-        	bindings = <&macro_tap &kp LG(LC(LS(LALT))) &kp O>;
+        	bindings 
+                = <&macro_press &kp LG(LC(LS(LALT))) &kp O>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp LG(LC(LS(LALT))) &kp O>;
 	    };
         
         // Arrows ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
