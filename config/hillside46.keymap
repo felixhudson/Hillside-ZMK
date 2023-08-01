@@ -490,9 +490,9 @@
                 num_layer {
 
                         bindings = <
-&trans        &kp  GRAVE    &kp  N7       &kp  N8       &kp  N9        &kp  PERCENT                                                                     &trans        &a_um  LGUI E         &trans           &trans         &trans       &trans        
-&trans        &hm_l NAV_L N0 &hm LCTRL N1  &hm LALT N2   &hm LGUI N3   &kp  D                                                                           &trans        &hm LGUI A   &hm LALT PLUS     &hm LCTRL LA(S) &none        &trans        
-&trans        &kp  Z        &kp  N4       &kp  N5       &kp  N6        &kp  LA(LS(NUMBER_2))  &trans                                             &trans          &trans        &kp  DE_UE        &kp  DE_OE       &kp  DOT       &trans       &trans        
+&trans        &kp  GRAVE    &kp  N7       &kp  N8       &kp  N9        &kp  PERCENT                                                                     &trans        &trans       &trans           &trans         &trans       &trans        
+&trans        &hm_l NAV_L N0 &hm LCTRL N1  &hm LALT N2   &hm LGUI N3   &kp  D                                                                           &trans        &a_um  LGUI A    &hm LALT PLUS     &hm LCTRL LA(S) &none        &trans        
+&trans        &kp  Z        &kp  N4       &kp  N5       &kp  N6        &kp  LA(LS(NUMBER_2))  &trans                                             &trans          &trans        &o_um  LGUI O        &u_um  LGUI U       &kp  DOT       &trans       &trans        
                                                         &trans         &trans        &hm_l SYM_L RETURN    &trans            &trans     &trans        &hm_l F_L SPACE  &trans
                         >;
 			
