@@ -528,7 +528,7 @@
                         bindings = <
 &trans   &kp  BSLH           &kp  AT_SIGN        &kp  LA(LS(NUMBER_8))       &kp  DOLLAR     &kp  PERCENT                                                                &trans        &trans             &trans            &trans            &trans                &trans
 &trans   &hm_l NAV_L EXCL &hm LCTRL TILDE &hm LALT PLUS &hm LGUI LT &kp  GT                                                                  &trans        &hm LGUI SLASH &hm LALT STAR  &hm LCTRL EQUAL &hm_l NUM_L UNDER  &trans
-&trans   &kp  PIPE        &kp CARET      &kp  ACUT     &kp  GRAVE   &kp  R         &trans                                         &trans        &trans        &kp  AMPS          &kp  LBRC      &kp  RBRC      &kp  RPAR          &trans
+&trans   &kp  PIPE        &kp CARET      &none    &kp  GRAVE   &kp  R         &trans                                         &trans        &trans        &kp  AMPS          &kp  LBRC      &kp  RBRC      &kp  RPAR          &trans
                                                       &trans        &trans        &trans       &trans              &trans       &trans        &trans        &trans 
                         >;
 			
