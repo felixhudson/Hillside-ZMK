@@ -504,7 +504,7 @@
                         bindings = <
 &trans        &kp F12         &kp  F7       &kp  F8       &kp  F9        &kp  PERCENT                                                                   &trans        &trans            &trans           &trans         &trans       &trans        
 &trans        &hm_l NAV_L F10 &hm LCTRL F1   &hm LALT F2   &hm LGUI F3   &kp  D                                                                         &trans        &hm LGUI A   &hm LALT PLUS &hm LCTRL LA(S)    &none        &trans        
-&trans        &kp F11         &kp  F4       &kp  F5       &kp  F6        &kp  LA(LS(NUMBER_2))  &trans                                             &trans        &trans        &kp  DE_UE        &kp  DE_OE       &trans       &trans       &trans        
+&trans        &kp F11         &kp  F4       &kp  F5       &kp  F6        &kp  LA(LS(NUMBER_2))  &trans                                             &trans        &trans        &o_um  LGUI O        &u_um  LGUI U       &trans       &trans       &trans        
                                                           &trans         &trans        &hm_l SYM_L RETURN    &trans            &trans     &trans        &trans        &trans
                         >;
 			
@@ -527,8 +527,8 @@
 
                         bindings = <
 &trans   &kp  BSLH           &kp  AT_SIGN        &kp  LA(LS(NUMBER_8))       &kp  DOLLAR     &kp  PERCENT                                                                &trans        &trans             &trans            &trans            &trans                &trans
-&trans   &hm_l NAV_L DE_EXCL &hm LCTRL DE_TILDE &hm LALT DE_PLUS &hm LGUI DE_LT &kp  DE_GT                                                                  &trans        &hm LGUI DE_SLASH &hm LALT DE_STAR  &hm LCTRL DE_EQUAL &hm_l NUM_L DE_UNDER  &trans
-&trans   &kp  DE_PIPE        &kp DE_CARET      &kp  DE_ACUT     &kp  DE_GRAVE   &kp  R         &trans                                         &trans        &trans        &kp  DE_AMPS          &kp  DE_LBRC      &kp  DE_RBRC      &kp  DE_RPAR          &trans
+&trans   &hm_l NAV_L EXCL &hm LCTRL TILDE &hm LALT PLUS &hm LGUI LT &kp  GT                                                                  &trans        &hm LGUI SLASH &hm LALT STAR  &hm LCTRL EQUAL &hm_l NUM_L UNDER  &trans
+&trans   &kp  PIPE        &kp CARET      &kp  DE_ACUT     &kp  DE_GRAVE   &kp  R         &trans                                         &trans        &trans        &kp  DE_AMPS          &kp  DE_LBRC      &kp  DE_RBRC      &kp  DE_RPAR          &trans
                                                       &trans        &trans        &trans       &trans              &trans       &trans        &trans        &trans 
                         >;
 			
