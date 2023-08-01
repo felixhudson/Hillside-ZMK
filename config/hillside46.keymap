@@ -492,7 +492,7 @@
                         bindings = <
 &trans        &kp  GRAVE    &kp  N7       &kp  N8       &kp  N9        &kp  PERCENT                                                                     &trans        &trans       &trans           &trans         &trans       &trans        
 &trans        &hm_l NAV_L N0 &hm LCTRL N1  &hm LALT N2   &hm LGUI N3   &kp  D                                                                           &trans        &a_um  LGUI A    &hm LALT PLUS     &hm LCTRL LA(S) &none        &trans        
-&trans        &kp  Z        &kp  N4       &kp  N5       &kp  N6        &kp  LA(LS(NUMBER_2))  &trans                                             &trans          &trans        &o_um  LGUI O        &u_um  LGUI U       &kp  DOT       &trans       &trans        
+&trans        &kp  Z        &kp  N4       &kp  N5       &kp  N6        &kp  LA(LS(NUMBER_2))  &trans                                             &trans          &trans        &o_um  LGUI O        &u_um  LGUI U       &trans       &trans       &trans        
                                                         &trans         &trans        &hm_l SYM_L RETURN    &trans            &trans     &trans        &hm_l F_L SPACE  &trans
                         >;
 			
@@ -504,7 +504,7 @@
                         bindings = <
 &trans        &kp F12         &kp  F7       &kp  F8       &kp  F9        &kp  PERCENT                                                                   &trans        &trans            &trans           &trans         &trans       &trans        
 &trans        &hm_l NAV_L F10 &hm LCTRL F1   &hm LALT F2   &hm LGUI F3   &kp  D                                                                         &trans        &hm LGUI A   &hm LALT PLUS &hm LCTRL LA(S)    &none        &trans        
-&trans        &kp F11         &kp  F4       &kp  F5       &kp  F6        &kp  LA(LS(NUMBER_2))  &trans                                             &trans        &trans        &kp  DE_UE        &kp  DE_OE       &kp  DOT       &trans       &trans        
+&trans        &kp F11         &kp  F4       &kp  F5       &kp  F6        &kp  LA(LS(NUMBER_2))  &trans                                             &trans        &trans        &kp  DE_UE        &kp  DE_OE       &trans       &trans       &trans        
                                                           &trans         &trans        &hm_l SYM_L RETURN    &trans            &trans     &trans        &trans        &trans
                         >;
 			
@@ -515,9 +515,9 @@
 
                         bindings = <
 &none     &none         &kp  LG(X)      &kp  LG(C)     &kp  LG(V)    &kp  LG(LS(Z))                                                                      &kp   K_APP   &leftleft    &downdown      &upupup       &rightright   &trans
-&none     &kp  LSHFT    &kp  LCTRL     &kp  LALT     &kp  LGUI    &kp LG(Z)                                                                       &kp   PG_UP   &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &trans
-&none     &none         &kp  0        &kp  0        &kp  LG(Q)        &kp  0        &trans                                           &trans     &kp   F6      &kp  HOME    &hm C_AC_SCROLL_DOWN PG_DN &hm C_AC_SCROLL_UP PG_UP &kp  END      &trans
-                                                    &trans        &trans        &hm_l SYM_L RETURN  &trans           &mo  SYM_L  &hm LSHIFT SPACE &kp TAB      &trans 
+&none     &none         &kp  LCTRL      &kp  LALT      &kp  LGUI     &kp LG(Z)                                                                           &trans        &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &trans
+&none     &none         &kp  0          &kp  0         &kp  LG(Q)    &kp  0        &trans                                           &trans               &trans        &kp  HOME    &hm C_AC_SCROLL_DOWN PG_DN &hm C_AC_SCROLL_UP PG_UP &kp  END      &trans
+                                                       &trans        &trans        &hm_l SYM_L RETURN  &trans           &mo  SYM_L  &hm LSHIFT SPACE     &kp TAB       &trans 
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
