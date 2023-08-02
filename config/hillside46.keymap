@@ -470,7 +470,7 @@
 &none         &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH  &kp  DOT   &hm RBKT LBKT &DQT_cl DQT DQT &sqt_at          &none
 &kp  TAB      &hm_l NAV_L C &hm LCTRL S   &hm LALT N    &hm LGUI T    &kp  K                                                                         &comma_par    &hm LGUI A    &hm LALT  E   &hm LCTRL  I   &hm_l NUM_L H    &kp  ENTER
 &none         &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &mo  ADJ_L                                         &none         &kp MINUS  &kp  U        &kp  O        &kp  Y     &kp  B           &none
-                                                        &kp DEL         &kp BSPC         &hm_l SYM_L R    &kp TAB               &h_h LG(LC(LS(LALT))) LS(LA(LG(LC(F1))))  &hm LSHIFT  SPACE  &spc_sh &none
+                                                        &kp DEL         &kp BSPC         &hm_l SYM_L R    &kp TAB               &h_h LG(LC(LS(LALT))) LS(LA(LG(LC(F24))))  &hm LSHIFT  SPACE  &spc_sh &none
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -503,9 +503,9 @@
                 l_layer {
 
                         bindings = <
-&trans        &kp F12         &kp  F7       &kp  F8       &kp  F9        &kp  PERCENT                                                                   &trans        &trans            &trans           &trans         &trans       &trans        
-&trans        &hm_l NAV_L F10 &hm LCTRL F1   &hm LALT F2   &hm LGUI F3   &kp  D                                                                         &trans        &hm LGUI A   &hm LALT PLUS &hm LCTRL LA(S)    &none        &trans        
-&trans        &kp F11         &kp  F4       &kp  F5       &kp  F6        &kp  LA(LS(NUMBER_2))  &trans                                             &trans        &trans        &o_um  LGUI O        &u_um  LGUI U       &trans       &trans       &trans        
+&trans        &kp F12         &kp  F7       &kp  F8       &kp  F9        &kp  F13                                                                       &kp F16       &kp F19            &kp F22           &kp LS(LA(LG(LC(F21))))         &trans       &trans        
+&trans        &hm_l NAV_L F10 &hm LCTRL F1   &hm LALT F2   &hm LGUI F3   &kp  F14                                                                       &kp F17       &kp F20            &kp F23       &kp LS(LA(LG(LC(F22))))   &none        &trans        
+&trans        &kp F11         &kp  F4       &kp  F5       &kp  F6        &kp  F15      &trans                                             &trans        &kp F18       &kp F21            &kp F24           &kp LS(LA(LG(LC(F23))))   &trans       &trans        
                                                           &trans         &trans        &hm_l SYM_L RETURN    &trans            &trans     &trans        &trans        &trans
                         >;
 			
