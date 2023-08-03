@@ -264,6 +264,15 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
+        gui_l: gui_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GUI_LAYER";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&comm_l>, <&kp>;
+        };
      // special Linger ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
         spsh_l: space_shift_layer {
             compatible = "zmk,behavior-hold-tap";
@@ -475,7 +484,7 @@
 
                         bindings = <
 &none         &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH  &kp  DOT   &hm RBKT LBKT &DQT_cl DQT DQT &sqt_at          &kp DEL
-&kp  TAB      &hm_l NAV_L C &hm LCTRL S   &hm LALT N    &hm_l COM_L T    &kp  K                                                                         &comma_par    &hm_l COM_L A    &hm LALT  E   &hm LCTRL  I   &hm_l NUM_L H    &kp  ENTER
+&kp  TAB      &hm_l NAV_L C &hm LCTRL S   &hm LALT N    &gui_l A T    &kp  K                                                                         &comma_par    &gui_l A A    &hm LALT  E   &hm LCTRL  I   &hm_l NUM_L H    &kp  ENTER
 &none         &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &mo  ADJ_L                                         &none         &kp MINUS  &kp  U        &kp  O        &kp  Y     &kp  B           &none
                                                         &kp DEL         &kp BSPC         &hm_l SYM_L R    &h_h LG(LC(LALT)) LS(LA(LG(LC(F19))))               &h_h LG(LC(LS(LALT))) LS(LA(LG(LC(F20))))  &hm LSHIFT  SPACE  &spc_sh &none
                         >;
