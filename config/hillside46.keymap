@@ -260,6 +260,16 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        hm_f: homerow_mods_fast {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_FAST";
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            quick_tap_ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+
         hm_l: layer-homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_L";
@@ -491,7 +501,7 @@
 &none         &kp  W        &kp  X        &kp  M        &kp  G        &kp  J                                                                         &kp  HASH  &kp  DOT   &hm RBKT LBKT &DQT_cl DQT DQT &sqt_at          &kp DEL
 &kp  TAB      &hm_l NAV_L C &hm LCTRL S   &hm LALT N    &gui_l A T    &kp  K                                                                         &comma_par    &gui_l A A    &hm LALT  E   &hm LCTRL  I   &hm_l NUM_L H    &kp  ENTER
 &none         &kp  P        &kp  F        &kp  L        &kp  D        &kp  V        &mo  ADJ_L                                         &none         &kp MINUS  &kp  U        &kp  O        &kp  Y     &kp  B           &none
-                                                        &kp DEL         &kp BSPC         &hm_l SYM_L R    &h_h LG(LC(LALT)) LS(LA(LG(LC(F19))))               &h_h LG(LC(LS(LALT))) LS(LA(LG(LC(F20))))  &hm LSHIFT  SPACE  &spc_sh &none
+                                                        &kp DEL         &kp BSPC         &hm_l SYM_L R    &h_h LG(LC(LALT)) LS(LA(LG(LC(F19))))               &h_h LG(LC(LS(LALT))) LS(LA(LG(LC(F20))))  &hm_f LSHIFT  SPACE  &spc_sh &none
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
