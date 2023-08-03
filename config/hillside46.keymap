@@ -18,7 +18,7 @@
 #define F_L      3
 #define NAV_L    4
 #define SYM_L    5
-#define SYM_L    6
+#define COM_L    6
 
 // Win
 #define wHDVB_L   7
