@@ -18,16 +18,17 @@
 #define F_L      3
 #define NAV_L    4
 #define SYM_L    5
+#define SYM_L    6
 
 // Win
-#define wHDVB_L   6
-#define wCURSER_L 7
-#define wNUM_L    8
-#define wF_L      9
+#define wHDVB_L   7
+#define wCURSER_L 8
+#define wNUM_L    9
+#define wF_L      10
 #define wNAV_L    10
-#define wSYM_L    11
+#define wSYM_L    12
 
-#define ADJ_L    12
+#define ADJ_L    13
 
 
 #define LEFT_ROW_0       0  1  2  3  4  5  
@@ -517,7 +518,7 @@
                         bindings = <
 &none     &none         &kp  LG(X)      &kp  LG(C)     &kp  LG(V)    &kp  LG(LS(Z))                                                                      &kp   K_APP   &leftleft    &downdown      &upupup       &rightright   &trans
 &none     &none         &kp  LCTRL      &kp  LALT      &kp  LGUI     &kp LG(Z)                                                                           &kp F17       &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &trans
-&none     &none         &kp  0          &kp  0         &kp  LG(Q)    &kp  0        &trans                                           &trans               &kp F18       &kp  HOME    &hm C_AC_SCROLL_DOWN PG_DN &hm C_AC_SCROLL_UP PG_UP &kp  END      &trans
+&none     &none         &kp  0          &kp  0         &kp  LG(Q)    &kp  0        &trans                                           &trans               &kp F18       &kp  LG(A)   &hm C_AC_SCROLL_DOWN PG_DN &hm C_AC_SCROLL_UP PG_UP &kp  END      &trans
                                                        &trans        &trans        &hm_l SYM_L RETURN  &trans           &mo  SYM_L  &hm LSHIFT SPACE     &kp TAB       &trans 
                         >;
 			
@@ -531,6 +532,18 @@
 &trans   &hm_l NAV_L EXCL &hm LCTRL TILDE &hm LALT PLUS &hm LGUI LT &kp  GT                                                                  &trans        &hm LGUI SLASH &hm LALT STAR  &hm LCTRL EQUAL &hm_l NUM_L UNDER  &trans
 &trans   &kp  PIPE        &kp CARET      &none    &kp  GRAVE   &kp  R         &trans                                         &trans        &trans        &kp  AMPS          &kp  LBRC      &kp  RBRC      &kp  RPAR          &trans
                                                       &trans        &trans        &trans       &trans              &trans       &trans        &trans        &trans 
+                        >;
+			
+                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+                };
+
+                command_layer {
+
+                        bindings = <
+&trans        &trans             &trans            &trans            &trans                &trans                                                               &trans        &trans             &trans            &trans            &trans                &trans
+&trans        &hm_l CURSER_L C   &trans            &trans            &trans                &trans                                                               &trans        &trans             &trans            &trans            &trans                &trans
+&trans        &trans             &trans            &trans            &trans                &trans       &trans                              &trans              &trans        &trans             &trans            &trans            &trans                &trans
+                                                   &trans            &trans                &trans       &trans                              &trans              &trans        &trans             &trans 
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
