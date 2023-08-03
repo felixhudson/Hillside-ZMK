@@ -558,9 +558,9 @@
                 command_layer {
 
                         bindings = <
-&trans        &trans             &trans            &trans            &trans                &trans                                                               &trans        &trans             &trans            &trans            &trans                &trans
-&trans        &hm_l CURSER_L C   &trans            &trans            &trans                &trans                                                               &trans        &trans             &trans            &trans            &trans                &trans
-&trans        &trans             &trans            &trans            &trans                &trans       &trans                              &trans              &trans        &trans             &trans            &trans            &trans                &trans
+&trans        &trans             &kp LS(LA(F20))   &trans            &trans                &trans                                                               &trans        &trans             &trans            &trans            &trans                &trans
+&trans        &kp LS(LA(F19))    &trans            &trans            &trans                &trans                                                               &trans        &kp LS(LA(F19))    &trans            &trans            &trans                &trans
+&trans        &trans             &trans            &trans            &trans                &kp LS(LA(F18))  &trans                          &trans              &trans        &trans             &trans            &trans            &trans                &trans
                                                    &trans            &trans                &trans       &trans                              &trans              &trans        &trans             &trans 
                         >;
 			
