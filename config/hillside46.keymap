@@ -547,8 +547,8 @@
 
                         bindings = <
 &none     &none         &kp  LG(X)      &kp  LG(C)     &kp  LG(V)    &kp  LG(LS(Z))                                                                      &kp   K_APP   &leftleft    &downdown      &upupup       &rightright   &trans
-&none     &none         &kp  LCTRL      &kp  LALT      &kp  LGUI     &kp LG(Z)                                                                           &kp F17       &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &trans
-&none     &none         &kp  0          &kp  0         &kp  LG(Q)    &kp  0        &trans                                           &trans               &kp LG(A)     &kp  HOME    &hm C_AC_SCROLL_DOWN PG_DN &hm C_AC_SCROLL_UP PG_UP &kp  END      &trans
+&none     &none         &hm_f LCTRL F1  &hm_f LALT F2  &hm_f LGUI F3 &kp LG(Z)                                                                           &kp F17       &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &trans
+&none     &none         &kp  F4         &kp  F5        &kp  LG(Q)    &kp  F15      &trans                                           &trans               &kp LG(A)     &kp  HOME    &hm C_AC_SCROLL_DOWN PG_DN &hm C_AC_SCROLL_UP PG_UP &kp  END      &trans
                                                        &trans        &trans        &hm_l SYM_L RETURN  &trans           &mo  SYM_L  &hm LSHIFT SPACE     &kp TAB       &trans 
                         >;
 			
