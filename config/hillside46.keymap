@@ -209,9 +209,9 @@
                 <&macro_tap>,
                 <&kp U>;
         };
-        a-cap_uml: a-cap_uml {
+        a_cap_uml: a_cap_uml {
             compatible = "zmk,behavior-macro";
-            label = "A-cap_UML";
+            label = "A_CAP_UML";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -225,9 +225,9 @@
                 <&macro_tap>,
                 <&kp A>;
         };
-        o-cap_uml: o-cap_uml {
+        o_cap_uml: o_cap_uml {
             compatible = "zmk,behavior-macro";
-            label = "O-cap_UML";
+            label = "O_CAP_UML";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -241,9 +241,9 @@
                 <&macro_tap>,
                 <&kp O>;
         };
-        u-cap_uml: u-cap_uml {
+        u_cap_uml: u_cap_uml {
             compatible = "zmk,behavior-macro";
-            label = "U-cap_UML";
+            label = "U_CAP_UML";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
