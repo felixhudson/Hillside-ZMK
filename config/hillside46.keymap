@@ -619,7 +619,7 @@
 
                         bindings = <
 &trans        &trans             &kp LS(LA(F20))   &trans            &trans                &trans                                                               &trans        &trans             &trans            &trans            &trans                &trans
-&trans        &kp LS(LA(F16))    &trans            &trans            &trans                &trans                                                               &trans        &a_cap_uml A    &trans            &trans            &trans                &trans
+&trans        &kp LS(LA(F16))    &trans            &trans            &trans                &trans                                                               &trans        &a_cap_uml     &trans            &trans            &trans                &trans
 &trans        &trans             &trans            &trans            &trans                &kp LS(LA(F18))  &trans                          &trans              &trans        &trans             &trans            &trans            &trans                &trans
                                                    &trans            &trans                &trans       &trans                              &trans              &trans        &trans             &trans 
                         >;
