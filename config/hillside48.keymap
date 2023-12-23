@@ -90,9 +90,9 @@
  */
                         bindings = <
 &kp  HOME     &kp  EXCL     &kp  AT       &kp  HASH     &kp  DOLLAR   &kp  PERCENT                                                                   &kp  CARET    &kp  AMPS     &kp  ASTRK    &kp  LPAR     &kp  RPAR     &trans
-&kp  END      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  PG_UP                                                                     &kp  MINUS    &kp  EQUAL    &kp  LBKT     &kp  RBKT     &kp  BSLH     &trans
+&kp  END      &kp  GRAVE     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  PG_UP                                                                     &kp  MINUS    &kp  EQUAL    &kp  LBKT     &kp  RBKT     &kp  BSLH     &trans
 &trans        &kp  Undo     &kp  Cut      &kp  Copy     &kp  Paste    &kp  PG_DN    &sk  RALT                                          &kp  K_APP    &kp  UNDER    &kp  PLUS     &kp  LBRC     &kp  RBRC     &kp  PIPE     &trans
-                            &trans                      &trans        &trans        &trans        &trans                 &mo  ADJ_L    &trans        &trans        &trans                      &kp  RCTRL    
+                            &kp GRAVE                      &trans        &trans        &trans        &trans                 &mo  ADJ_L    &trans        &trans        &trans                      &kp  RCTRL    
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -108,8 +108,8 @@
  */
                         bindings = <
 &kp  F11      &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5                                                                        &kp   N6      &kp   N7      &kp   N8      &kp   N9      &kp  N0       &trans
-&kp  F12      &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5                                                                        &kp  C_VOL_UP &kp   C_VOL_DN   &kp   RCTRL   &kp   LALT    &kp  RGUI     &trans
-&trans        &kp  F6       &kp  F7       &kp  F8       &kp  F9       &kp  F10      &kp INS                                            &kp  C_MUTE   &kp   LEFT    &kp   UP      &kp   DOWN    &kp  RIGHT    &kp PERIOD &kp DEL
+&kp  F12      &kp  F1       &kp  F2       &kp  F3       &kp  F4       &kp  F5                                                                        &kp  LEFT     &kp   DOWN   &kp   UP   &kp   RIGHT    &kp  RGUI     &trans
+&trans        &kp  F6       &kp  F7       &kp  F8       &kp  F9       &kp  F10      &kp INS                                            &kp  C_MUTE   &kp   C_VOL_DN    &kp   DOWN       &kp   UP        &kp  RIGHT    &kp PERIOD &kp DEL
                             &trans                      &trans        &trans        &trans        &mo ADJ_L              &trans        &trans        &trans        &trans                      &kp  RCTRL   
                         >;
 			
