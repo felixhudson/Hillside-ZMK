@@ -220,10 +220,10 @@
                 <&kp U &kp LALT>,
                 <&macro_press>,
                 <&kp LSHFT>,
-                <&macro_release>,
-                <&kp LSHIFT>,
                 <&macro_tap>,
-                <&kp A>;
+                <&kp A>,
+                <&macro_release>,
+                <&kp LSHIFT>;
         };
         o_cap_uml: o_cap_uml {
             compatible = "zmk,behavior-macro";
@@ -236,10 +236,10 @@
                 <&kp U &kp LALT>,
                 <&macro_press>,
                 <&kp LSHFT>,
-                <&macro_release>,
-                <&kp LSHIFT>,
                 <&macro_tap>,
-                <&kp O>;
+                <&kp O>,
+                <&macro_release>,
+                <&kp LSHIFT>;
         };
         u_cap_uml: u_cap_uml {
             compatible = "zmk,behavior-macro";
@@ -252,10 +252,10 @@
                 <&kp U &kp LALT>,
                 <&macro_press>,
                 <&kp LSHFT>,
-                <&macro_release>,
-                <&kp LSHIFT>,
                 <&macro_tap>,
-                <&kp U>;
+                <&kp U>,
+                <&macro_release>,
+                <&kp LSHIFT>;
         };
         // Other ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
          schnell_sch: schnell {
