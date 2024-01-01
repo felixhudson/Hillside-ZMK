@@ -22,6 +22,15 @@
 #define Paste  LC(V)
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        navon {
+            bindings = <&tog 4>;
+            key-positions = <7 8 9>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
