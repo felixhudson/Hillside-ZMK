@@ -34,6 +34,11 @@
             bindings = <&tog 7>;
             key-positions = <1 2 3 4>;
         };
+
+        capsword {
+            bindings = <&caps_word>;
+            key-positions = <19 20 21>;
+        };
     };
 
     keymap {
@@ -108,7 +113,7 @@
             bindings = <
 &kp HOME  &kp EXCL          &kp AT             &kp HASH              &kp DOLLAR             &kp PERCENT                                          &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR  &trans
 &kp END   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PG_UP                                            &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp BSLH  &trans
-&trans    &kp Undo          &kp Cut            &kp Copy              &kp TILDE              &kp PG_DN    &sk RALT                     &kp K_APP  &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC   &kp PIPE  &trans
+&trans    &kp Undo          &kp Cut            &kp Copy              &kp COLON              &kp PG_DN    &sk RALT                     &kp K_APP  &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC   &kp PIPE  &trans
                             &kp GRAVE                                &trans                 &trans       &trans    &trans  &mo ADJ_L  &trans     &trans     &trans                &kp RCTRL
             >;
 
@@ -156,18 +161,18 @@
         num9square {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                                  &kp TAB  &kp N7  &kp N8  &kp N9  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans   &kp N4  &kp N5  &kp N6  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans   &kp N1  &kp N2  &kp N3  &kp DOT  &kp DOT
+&trans  &trans  &trans  &trans  &trans  &trans                                  &none    &kp N4  &kp N5  &kp N6  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &none    &kp N1  &kp N2  &kp N3  &kp DOT  &kp DOT
                 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &kp N0   &kp N0          &trans
             >;
         };
 
         game {
             bindings = <
-&kp ESC   &kp TAB    &kp Q   &kp W  &kp E   &kp R                                           &trans  &trans  &trans  &trans  &trans  &trans
-&kp RET   &kp LSHFT  &kp A   &kp S  &kp D   &kp F                                           &trans  &trans  &trans  &trans  &trans  &trans
-&kp BSPC  &kp G      &kp Z   &kp X  &kp C   &kp V     &trans                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                     &trans         &trans  &kp LALT  &kp LCTRL  &kp SPACE  &trans  &trans  &trans  &trans          &trans
+&kp ESC   &kp TAB    &kp Q  &kp W  &kp E  &kp R                                           &trans  &trans  &trans  &trans  &trans  &trans
+&kp RET   &kp LSHFT  &kp A  &kp S  &kp D  &kp F                                           &trans  &trans  &trans  &trans  &trans  &trans
+&kp BSPC  &kp G      &kp Z  &kp X  &kp C  &kp V     &trans                        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                     &none         &none  &kp LALT  &kp LCTRL  &kp SPACE  &trans  &trans  &trans  &trans          &trans
             >;
         };
     };
