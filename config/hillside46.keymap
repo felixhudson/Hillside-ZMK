@@ -29,7 +29,7 @@
 #define wSYM_L    12
 
 #define UML_L    13
-#define ADJ_L    13
+#define ADJ_L    14
 
 
 #define LEFT_ROW_0       0  1  2  3  4  5  
