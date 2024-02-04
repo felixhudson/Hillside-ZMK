@@ -435,8 +435,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "PG_RIGHT";
             #binding-cells = <0>;
-            bindings = <&kp HOME>, <&kp LA(TAB)>;
-            mods = <(MOD_LGUI|MOD_RGUI)>;
+            bindings = <&kp END>, <&kp LA(TAB)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;;
         };
 
       bsp3: bsp3 {
