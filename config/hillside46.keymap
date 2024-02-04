@@ -436,7 +436,7 @@
             label = "PG_RIGHT";
             #binding-cells = <0>;
             bindings = <&kp END>, <&kp LA(TAB)>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
 
       bsp3: bsp3 {
