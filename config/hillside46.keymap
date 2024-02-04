@@ -597,7 +597,7 @@
                         bindings = <
 &none     &none         &kp  LG(X)      &kp  LG(C)     &kp  LG(V)    &kp  LG(LS(Z))                                                                      &kp   K_APP   &leftleft    &downdown      &upupup       &rightright   &trans
 &none     &none         &hm_f LCTRL F1  &hm_f LALT F2  &hm_f LGUI F3 &kp LG(Z)                                                                           &kp F17       &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &trans
-&none     &none         &kp  F4         &kp  F5        &kp  LG(Q)    &kp  F15      &trans                                           &trans               &kp LG(A)     &kp  HOME    &hm C_AC_SCROLL_DOWN PG_DN &hm C_AC_SCROLL_UP PG_UP &kp  END      &trans
+&none     &none         &kp  F4         &kp  LG(Q)     &kp  LG(W)    &kp  F15      &trans                                           &trans               &kp LG(A)     &kp  HOME    &hm C_AC_SCROLL_DOWN PG_DN &hm C_AC_SCROLL_UP PG_UP &kp  END      &trans
                                                        &trans        &trans        &hm_l SYM_L RETURN  &trans           &mo  SYM_L  &hm LSHIFT SPACE     &kp TAB       &trans 
                         >;
 			
@@ -714,7 +714,7 @@
                         bindings = <
 &none     &none         &kp  LC(X)      &kp  LC(C)     &kp  LC(V)    &kp  LC(DE_Y)                                                                      &kp   K_APP   &leftleft    &downdown      &upupup       &rightright   &trans
 &none     &kp  LSHFT    &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp LC(DE_Z)                                                                       &kp   PG_UP   &kp  LEFT    &kp   DOWN     &kp   UP      &kp  RIGHT    &trans
-&none     &none         &kp  0        &kp  LA(F4)   &kp  LC(W)    &kp  0        &trans                                           &trans     &kp   F6      &hm  HOME LS(LA(tap))    &hm C_AC_SCROLL_DOWN PG_DN &hm C_AC_SCROLL_UP PG_UP &hm END LA(tap)      &trans
+&none     &none         &kp  0        &kp  0        &kp  LA(F4)        &kp  0        &trans                                           &trans     &kp   F6      &kp  HOME    &hm C_AC_SCROLL_DOWN PG_DN &hm C_AC_SCROLL_UP PG_UP &kp  END      &trans
                                                     &trans        &trans        &hm_l wSYM_L RETURN  &trans           &mo  wSYM_L  &hm LSHIFT SPACE &kp TAB      &trans 
                         >;
 			
