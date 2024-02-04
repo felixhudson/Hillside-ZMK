@@ -428,15 +428,15 @@
             compatible = "zmk,behavior-mod-morph";
             label = "PG_LEFT";
             #binding-cells = <0>;
-            bindings = <&kp HOME>, <&kp LS(LA(TAB))>;
-            mods = <(MOD_LGUI|MOD_RGUI)>;
+            bindings = <&kp HOME>, <&kp LC(LA(TAB))>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };
         pg_r: PG_RIGHT {
             compatible = "zmk,behavior-mod-morph";
             label = "PG_RIGHT";
             #binding-cells = <0>;
-            bindings = <&kp END>, <&kp LA(TAB)>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            bindings = <&kp END>, <&kp LC(TAB)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
         };
 
       bsp3: bsp3 {
