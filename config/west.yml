@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk-point
       remote: felixhudson
-      revision: main
+      revision: felix-point
       import: app/west.yml
   self:
     path: config
