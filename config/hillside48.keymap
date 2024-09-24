@@ -12,6 +12,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+// include all of the new mouse things
+#include <behaviors/mouse_keys.dtsi>
 
 #define QWERTY_L 0
 #define DVORAK_L 1
@@ -134,7 +136,7 @@
 
             bindings = <
 &kp F11  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                           &kp N6    &kp N7         &kp N8        &kp N9     &kp N0           &trans
-&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                           &kp LEFT  &mkp MB1       &mmv MOVE_UP  &kp RIGHT  &kp C_VOLUME_UP  &kp C_BRI_UP
+&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                           &kp LEFT  &kp UP       &kp DOWN  &kp RIGHT  &kp C_VOLUME_UP  &kp C_BRI_UP
 &trans   &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp INS                     &kp C_MUTE  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp C_VOL_DN     &kp C_BRI_DN
                  &trans          &trans  &trans   &trans   &mo ADJ_L  &trans  &kp SPACE   &trans    &trans                       &kp RCTRL
             >;
@@ -181,8 +183,8 @@
 
         mousenav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &mkp MB2  &mkp MB4  &mkp MCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &mkp MB4  &mkp MB2  &mkp MB5   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &mkp MB2  &mmv MOVE_UP  &mkp MCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &trans  &trans    &trans    &trans     &trans  &trans
                 &trans          &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &trans  &trans              &trans
             >;
