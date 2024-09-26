@@ -15,6 +15,9 @@
 // include all of the new mouse things
 #include <behaviors/mouse_keys.dtsi>
 
+// make mouse a bit faster
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 800  // 600
+
 #define QWERTY_L 0
 #define DVORAK_L 1
 #define COLEMK_L 2
